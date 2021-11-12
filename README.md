@@ -5,7 +5,7 @@
 [Amazon Linux 2022](https://aws.amazon.com/linux/amazon-linux-2022) is the next generation of Amazon Linux from [Amazon Web Services](https://aws.amazon.com/) (AWS). It provides a stable, and high-performance execution environment to develop and run cloud applications. With Amazon Linux 2022, you get an application environment that offers long term support with access to the latest innovations in Linux. Using Fedora as the upstream, AL2022 is a stable distribution that has gone through extensive testing to offer package stability and is maintained and managed with all necessary security updates. Amazon Linux 2022 is provided at no additional charge.
 
 **Quick links**
-- Learn how to get started with Amazon Linux 2022 
+- [Learn how to get started with Amazon Linux 2022](https://github.com/amazonlinux/amazon-linux-2022#how-to-get-started)
 - [Review Amazon Linux 2022 documentation](https://docs.aws.amazon.com/linux/al2022/ug/)
 - [Review Amazon Linux 2022 FAQs](https://aws.amazon.com/linux/amazon-linux-2022/faqs/)
 - [Review the Release Notes](https://github.com/amazonlinux/amazon-linux-2022/blob/main/Amazon-Linux-2022.0.20211116.0.md)
