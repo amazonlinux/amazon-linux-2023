@@ -66,18 +66,21 @@ To launch an Amazon Linux 2022 instance from the EC2 Management Console, navigat
 
 ### Launching latest Amazon Linux 2022 via CloudFormation
 To launch the latest Amazon Linux 2022 AMI using CloudFormation, you can use the following template:
-### Use public Systems Manager Parameter
+
+```# Use public Systems Manager Parameter
 Parameters:
   LatestAmiId:
     Type: 'AWS::SSM::Parameter::Value<AWS::EC2::Image::Id>'
-    Default: '/aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-gp2'
+    Default: '/aws/service/ami-amazon-linux-latest/al2022-ami-kernel-5.10-arm64'
 
 Resources:
  Instance:
     Type: 'AWS::EC2::Instance'
     Properties:
       ImageId: !Ref LatestAmiId
+```
 
+Make sure to replace the AMI alias section if needed. The following aliases are available:
 - *al2022-ami-kernel-5.10-arm64* for arm64 architecture
 - *al2022-ami-minimal-kernel-5.10-arm64* for arm64 architecture (minimal AMI)
 - *al2022-ami-kernel-5.10-x86_64* for x86_64 architecture
