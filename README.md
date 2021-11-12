@@ -24,6 +24,14 @@ If you just have questions about Amazon Linux 2022, please feel free to start or
 ## Architectures
 Our supported architectures include *x86_64* and *aarch64* (written as arm64 in some contexts).
 
+## Upcoming changes
+During the preview, we're actively seeking your feedback about what to add to and modify in Amazon Linux 2022. We also have a clear roadmap moving forward.
+
+Notable upcoming changes during the preview include the following updates:
+- The Linux Kernel version will be moving to 5.15.
+- OpenSSL 3 will become the default OpenSSL version.
+
+
 
 ## Benefits of Amazon Linux 2022
 
