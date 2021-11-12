@@ -2,7 +2,7 @@
 
 **Welcome to Amazon Linux 2022!**
 
-[Amazon Linux 2022](https://aws.amazon.com/linux/amazon-linux-2022) is the next generation of Amazon Linux from [Amazon Web Services](https://aws.amazon.com/) (AWS). It provides a secure, stable, and high-performance execution environment to develop and run cloud applications. With Amazon Linux 2022, you get an application environment that offers long term support with access to the latest innovations in Linux. Using Fedora as the upstream, AL2022 is a stable distribution that has gone through extensive testing to ensure package stability and is maintained and managed with all necessary security updates. Amazon Linux 2022 is provided at no additional charge.
+[Amazon Linux 2022](https://aws.amazon.com/linux/amazon-linux-2022) is the next generation of Amazon Linux from [Amazon Web Services](https://aws.amazon.com/) (AWS). It provides a stable, and high-performance execution environment to develop and run cloud applications. With Amazon Linux 2022, you get an application environment that offers long term support with access to the latest innovations in Linux. Using Fedora as the upstream, AL2022 is a stable distribution that has gone through extensive testing to offer package stability and is maintained and managed with all necessary security updates. Amazon Linux 2022 is provided at no additional charge.
 
 **Quick links**
 - Learn how to get started with Amazon Linux 2022 
@@ -36,7 +36,7 @@ Based on Fedora, AL2022 provides frequent and flexible quarterly updates. AL2022
 **Easy to plan and manage operating system lifecycle:**
 New Amazon Linux major versions will be available every two years and each major version, including AL2022, will come with five years of long term support. 
 
-**Secure by default:**
+**High security standard:**
 AL2022 has a high security standard and comes with SELinux enabled and enforced by default to help you meet your compliance needs. AL2022 also allows you to set security policies at boot time.
 
 ## Notable features of Amazon Linux 2022
