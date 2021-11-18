@@ -16,7 +16,7 @@
 ## Contact Us
 If you find a security issue, please [contact our security team](https://github.com/amazonlinux/amazon-linux-2022/security/policy) rather than opening an issue.
 
-We use GitHub issues to gather feedback about Amazon Linux 2022, track bug reports and feature requests. You can look at existing [issues](https://github.com/amazonlinux/amazon-linux-2022/issues) to see whether your concern is already known. If not, you can select from a few templates. Contact us with a new issue [here](https://github.com/amazonlinux/amazon-linux-2022/issues/new/choose).
+We use GitHub issues to gather feedback about Amazon Linux 2022, track bug reports and feature requests. You can look at existing [issues](https://github.com/amazonlinux/amazon-linux-2022/issues) to see whether your concern is already known. If not, you can select from a few templates. Contact us with a new issue [here](https://github.com/amazonlinux/amazon-linux-2022/issues/new/choose). We will respond to your request within 48 business hours.
 
 If you just have questions about Amazon Linux 2022, please feel free to start or join a [discussion](https://github.com/amazonlinux/amazon-linux-2022/discussions). Feedback on Amazon Linux 2022 can also be provided through your designated AWS representative or [Amazon Linux Discussion Forum](https://forums.aws.amazon.com/forum.jspa?forumID=228). 
 
