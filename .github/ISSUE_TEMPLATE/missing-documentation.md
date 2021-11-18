@@ -1,7 +1,7 @@
 ---
 name: Missing documentation
 about: Request Amazon Linux 2022 documentation
-title: ''
+title: "[Missing Documentation] - Title"
 labels: ''
 assignees: ''
 
