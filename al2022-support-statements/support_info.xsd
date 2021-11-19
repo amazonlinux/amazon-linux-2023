@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+            elementFormDefault="qualified"
+        attributeFormDefault="unqualified">
+
+  <xs:annotation>
+    <xs:appinfo>Support Info XML</xs:appinfo>
+    <xs:documentation xml:lang="en">
+      This schema defines a document that describes the support statements
+      for RPM packages in a YUM repository. This allows a user to map what
+      packages they have installed to a support statement both as of now,
+      and into the future. It also allows an OS vendor to deprecate parts
+      of the Operating System before other parts in order to provide extended
+      support, and for that to be clear and machine readable.
+    </xs:documentation>
+  </xs:annotation>
+
+  <xs:element name="package_support" type="PackageSupport">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">
+	The top level package_support element contains support statements, notes on
+	those statements, along with a single top level attribute on when the package
+	support statement is current as of.
+      </xs:documentation>
+    </xs:annotation>
+  </xs:element>
+
+  <xs:complexType name="PackageSupport">
+    <xs:all>
+      <xs:element name="statements" type="Statements" minOccurs="1" maxOccurs="1" />
+      <xs:element name="notes" type="Notes" minOccurs="0" maxOccurs="1" />
+    </xs:all>
+    <xs:attribute name="current_as" type="xs:dateTime" />
+  </xs:complexType>
+  
+  <xs:complexType name="Statements">
+    <xs:sequence>
+      <xs:element name="statement" type="Statement" minOccurs="1" maxOccurs="unbounded">
+	<xs:annotation>
+	  <xs:documentation xml:lang="en">
+	    The main part of this document is a series of statements about particular
+	    packages. Optionally, these statements have start and end dates. These dates
+	    can be used to transition packages through different support phases, and out
+	    to a final unsupported state.
+	  </xs:documentation>
+	</xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Statement">
+    <xs:sequence>
+      <xs:element name="summary" type="xs:string" minOccurs="1"/>
+      <xs:element name="text" type="xs:string" minOccurs="1"/>
+      <xs:element name="link" type="xs:string" minOccurs="1" maxOccurs="1"/>
+      <xs:element name="packages" type="Packages" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string" use="required">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">
+	A unique (for the document) identifier. Must conform with requirements for
+	a html anchor name.
+      </xs:documentation>
+    </xs:annotation>
+    </xs:attribute>
+    <xs:attribute name="start_date" type="xs:date"/>
+    <xs:attribute name="end_date" type="xs:date"/>
+    <xs:attribute name="marker" type="xs:string">
+      <xs:annotation>
+	<xs:documentation xml:lang="en">
+	  The marker indicates what kind of statement this is, and thus can be used
+	  by compliance software to join the set of installed packages with a policy
+	  as to what's allowed.
+	  A value of 'unsupported' means that this statement is about the non-support
+	  of software. A value of 'supported' means that it's a positive affirmation
+	  of support.
+	</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="Notes">
+    <xs:sequence>
+      <xs:element name="note" type="Note" minOccurs="0" maxOccurs="unbounded">
+	<xs:annotation>
+	  <xs:documentation xml:lang="en">
+	    Matching a package to a support statement can come with an additional note
+	    as to why that particular package is there. For example, as part of a deprecation
+	    campaign for a custom OS inside a company, one could deprecate all packages that
+	    aren't installed on any host, and indicate that in a note. A note is designed
+	    to be useful to someone wondering why a package is in a particular category.
+	  </xs:documentation>
+	</xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Packages">
+    <xs:sequence>
+      <xs:element name="package" type="Package" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Note">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+    <xs:attribute name="id" type="xs:string"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+
+  <xs:complexType name="Package">
+    <xs:attribute name="name" type="xs:string"/>
+    <xs:attribute name="nevra" type="xs:string"/>
+    <xs:attribute name="note" type="xs:string"/>
+  </xs:complexType>
+
+</xs:schema>
+
