@@ -29,7 +29,7 @@ Amazon's trademarks and trade dress may not be used in
 
 All of the Amazon Linux release notes for the year 2021, latest first, are listed in the table of contents\.
 
-The first Technology Preview of Amazon Linux 2022 was released on November 16, 2021\. It contains the following changes from Amazon Linux 2\.
+The first Technology Preview of Amazon Linux 2022 was released on November 21, 2021 with the version number 2022.0.20211118\. It contains the following changes from Amazon Linux 2\.
 
 ### New features<a name="new-features"></a>
 
