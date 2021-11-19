@@ -6,4 +6,4 @@ Amazon Linux 2022 (AL2022) is the next generation of Amazon Linux from Amazon We
 
 Come join us to learn more about AL2022 and how you can make the most of it! We will have the product and engineering teams available to answer your questions! This will be an interactive virtual discussion; please come with questions!
 
-Instructions on how to sign up for the session will be coming shortly.
+Sign up for the session: http://amazonlinux2022roundtable.splashthat.com/
