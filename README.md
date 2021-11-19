@@ -8,7 +8,7 @@
 - [Learn how to get started with Amazon Linux 2022](https://github.com/amazonlinux/amazon-linux-2022#how-to-get-started)
 - [Review Amazon Linux 2022 documentation](https://docs.aws.amazon.com/linux/al2022/ug/)
 - [Review Amazon Linux 2022 FAQs](https://aws.amazon.com/linux/amazon-linux-2022/faqs/)
-- [Review the Release Notes](https://github.com/amazonlinux/amazon-linux-2022/blob/main/Amazon-Linux-2022.0.20211116.0.md) for the AMI released on 11/16/2021
+- [Review the Release Notes](https://github.com/amazonlinux/amazon-linux-2022/blob/main/Amazon-Linux-2022.0.20211116.0.md) for the AMI released on 2021-11-16
 
 **What's New**
 - **12/3** [Customer roundtable for Amazon Linux 2022!](https://github.com/amazonlinux/amazon-linux-2022/blob/main/roundtable.md) (Virtual)
