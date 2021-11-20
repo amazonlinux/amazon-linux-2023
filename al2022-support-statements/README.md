@@ -18,6 +18,7 @@ The full list of core packages will be ﬁnalized during the preview. If you wan
 
 ### Plugin Usage:
 
+#### Note: Support periods mentioned below are EXAMPLES for the AL2022 Tech Preview, and are subject to change at GA.
 
 
 ```
