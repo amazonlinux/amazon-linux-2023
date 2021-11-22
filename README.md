@@ -1,4 +1,4 @@
-# Amazon Linux 2022
+# Amazon Linux 2022 - In Preview
 
 **Welcome to Amazon Linux 2022!**
 
