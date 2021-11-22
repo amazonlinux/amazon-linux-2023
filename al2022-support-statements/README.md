@@ -1,6 +1,6 @@
 ## Amazon Linux 2022 Support Statements
 
-Just want to see the support statements? Head to https://amazonlinux.github.io/al2022-support-statements/
+Just want to see the support statements? Head to https://amazonlinux.github.io/amazon-linux-2022/al2022-support-statements/
 
 This repository contains information as to the Maintenance Support period of Amazon Linux 2022.
 
