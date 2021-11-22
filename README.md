@@ -9,7 +9,7 @@
 - [Review Amazon Linux 2022 documentation](https://docs.aws.amazon.com/linux/al2022/ug/)
 - [Review Amazon Linux 2022 FAQs](https://aws.amazon.com/linux/amazon-linux-2022/faqs/)
 - [Look at our roadmap to learn of the upcoming features](https://github.com/amazonlinux/amazon-linux-2022/projects/1)
-- [Review the Release Notes](https://github.com/amazonlinux/amazon-linux-2022/blob/main/Amazon-Linux-2022.0.20211118.0.md) for the AMI released on 2021-11-18
+- [Review the Release Notes](https://github.com/amazonlinux/amazon-linux-2022/blob/main/Release-Notes-Amazon-Linux-2022.0.20211118.0.md) for the AMI released on 2021-11-22
 
 ## Contact Us
 If you find a security issue, please [contact our security team](https://github.com/amazonlinux/amazon-linux-2022/security/policy) rather than opening an issue.
