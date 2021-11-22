@@ -23,7 +23,7 @@ Amazon's trademarks and trade dress may not be used in
 
 ## Amazon Linux 2022 release notes<a name="relnotes-archive"></a>
 
-Amazon Linux 2022 was released on November 18, 2021\.
+Amazon Linux 2022 was released on November 22, 2021\.
 
 ### New features<a name="new-features"></a>
 
