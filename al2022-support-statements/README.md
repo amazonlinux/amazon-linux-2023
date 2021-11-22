@@ -6,7 +6,9 @@ This repository contains information as to the Maintenance Support period of Ama
 
 The information is available in a number of formats. There is the machine readable `support_info.xml`, which is of the `support_info.xsd` schema. For humans, there is XSLT to have a by package and by support statement ordered output.
 
-In Amazon Linux 2022, you can see specific support status and dates of individual packages using the `dnf-plugin-support-info` plugin. You can even get information on all currently installed packages or apply filters based on "supported" or "unsupported" packages.
+In Amazon Linux 2022, you can see specific support status and dates of individual packages using the `dnf-plugin-support-info` plugin. You can even get information on all currently installed packages or apply filters based on "supported" or "unsupported" packages. 
+
+DNF Plugin source is available here: https://github.com/amazonlinux/dnf-plugin-support-info.
 
 
 ## DNF SupportInfo Pugin
