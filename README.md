@@ -23,6 +23,7 @@ If you just have questions about Amazon Linux 2022, please feel free to start or
 
 ## Architectures
 Our supported architectures include *x86_64* and *aarch64* (written as arm64 in some contexts).
+
 Please note: Amazon Linux 2022 does not support A1 instances.
 
 ## Upcoming changes
