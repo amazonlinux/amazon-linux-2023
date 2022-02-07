@@ -31,7 +31,7 @@ This section contains upcoming changes and ongoing release notes for Amazon Linu
 
 **Topics**
 + [Planned changes](#planned-changes)
-+ [Amazon Linux 2022 release notes update 2022\-02\-04](#relnotes-20220207)
++ [Amazon Linux 2022 release notes update 2022\-02\-07](#relnotes-20220207)
 ### Planned changes<a name="planned-changes"></a>
 
 Before Amazon Linux 2022 is released for general availability, we will make changes and improvements to the preview version\. 
@@ -48,7 +48,7 @@ The following features will be introduced to Amazon Linux 2022 before it is rele
 + Container runtime
 + Kernel Live Patching
 
-### Amazon Linux 2022 release notes update 2022\-02\-04<a name="relnotes-20220207"></a>
+### Amazon Linux 2022 release notes update 2022\-02\-07<a name="relnotes-20220207"></a>
 
 Amazon Linux 2022 was updated in preview on February 7, 2022\.
 
