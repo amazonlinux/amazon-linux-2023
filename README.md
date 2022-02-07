@@ -111,7 +111,7 @@ The Amazon Linux container image is available on Amazon ECR Public\. Support for
 
 1. Authenticate your Docker client to the Amazon Linux Public registry\. Authentication tokens are valid for 12 hours\. For more information, see [Private registry authentication](https://docs.aws.amazon.com/AmazonECR/latest/userguide/registry_auth.html) in the *Amazon Elastic Container Registry User Guide*\.
 **Note**  
-The get\-login\-password command is available in the AWS CLI starting with version `1.17.10`\. For more information, see [Installing the AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html) in the *AWS Command Line Interface User Guide*\.
+The get\-login\-password command is supported using the latest version of AWS CLI version 2. For more information, see [Installing the AWS Command Line Interface](https://alpha-docs-aws.amazon.com/cli/latest/userguide/getting-started-install.html) in the *AWS Command Line Interface User Guide*\.
 
    ```
    $ aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws
