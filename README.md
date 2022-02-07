@@ -98,3 +98,55 @@ Make sure to replace the AMI alias section if needed. The following aliases are 
 
 ### Launching Amazon Linux 2022 using specific AMI ID
 You can launch specific Amazon Linux 2022 AMI using its AMI ID. You can determine the needed Amazon Linux 2022 AMI ID by looking at the AMI list in the EC2 Management Console or by using SSM. If you are using SSM, please refer to this [article](https://aws.amazon.com/blogs/compute/query-for-the-latest-amazon-linux-ami-ids-using-aws-systems-manager-parameter-store/) for details and make sure to indicate the AMI aliases from the section above.
+
+### Using the Amazon Linux container image<a name="install-docker"></a>
+
+The Amazon Linux container image is built from the same software components that are included in the Amazon Linux AMI\. It's available for use in any environment as a base image for Docker workloads\. If you're using the Amazon Linux AMI for applications in [Amazon Elastic Compute Cloud](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/) \(Amazon EC2\), you can containerize your applications with the Amazon Linux container image\.
+
+Use the Amazon Linux container image in your local development environment and then push your application to AWS using [Amazon Elastic Container Service](https://docs.aws.amazon.com/AmazonECS/latest/userguide/) \(Amazon ECS\)\. For more information, see [Using Amazon ECR images with Amazon ECS](https://docs.aws.amazon.com/AmazonECR/latest/userguide/ECR_on_ECS.html) in the *Amazon Elastic Container Registry User Guide*\.
+
+The Amazon Linux container image is available on Amazon ECR Public\. Support for the Amazon Linux container image can be found by visiting the [AWS developer forums](https://forums.aws.amazon.com/forum.jspa?forumID=228)\.
+
+**To pull the Amazon Linux container image from Amazon ECR Public**
+
+1. Authenticate your Docker client to the Amazon Linux Public registry\. Authentication tokens are valid for 12 hours\. For more information, see [Private registry authentication](https://docs.aws.amazon.com/AmazonECR/latest/userguide/registry_auth.html) in the *Amazon Elastic Container Registry User Guide*\.
+**Note**  
+The get\-login\-password command is available in the AWS CLI starting with version `1.17.10`\. For more information, see [Installing the AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html) in the *AWS Command Line Interface User Guide*\.
+
+   ```
+   $ aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws
+   ```
+
+   The output is as follows:
+
+   ```
+   Login succeeded
+   ```
+
+1. Pull the Amazon Linux container image using the docker pull command\. To view the Amazon Linux container image on the Amazon ECR Public Gallery, see [Amazon ECR Public Gallery \- amazonlinux](https://gallery.ecr.aws/amazonlinux/amazonlinux)\.
+**Note**  
+To get the latest version of the container image of Amazon Linux 2022, use the tag :2022\. To get a specific version of the container image, you need to use the tag listed in the [Amazon ECR Public Gallery \-amazonlinux](https://gallery.ecr.aws/amazonlinux/amazonlinux), for example :2022\.0\.20211222\.0\. The following examples use the tag :2022 and pull the most recent available container image of Amazon Linux 2022\.
+
+   ```
+   # docker pull public.ecr.aws/amazonlinux/amazonlinux:2022
+   ```
+
+1. \(Optional\) Run the container locally\.
+
+   ```
+   # docker run -it public.ecr.aws/amazonlinux/amazonlinux:2022 /bin/bash
+   ```
+
+**To pull the Amazon Linux container image from Docker Hub**
+
+1. Pull the Amazon Linux container image using the docker pull command\.
+
+   ```
+   # docker pull amazonlinux:2022
+   ```
+
+1. \(Optional\) Run the container locally\.
+
+   ```
+   # docker run -it amazonlinux:2022 /bin/bash
+   ```
