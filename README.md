@@ -136,18 +136,18 @@ To get the latest version of the container image of Amazon Linux 2022, use the t
    ```
    # docker run -it public.ecr.aws/amazonlinux/amazonlinux:2022 /bin/bash
    ```
-**Note**
-If *seccomp* is enabled, you might get an *EPERM* error when using Amazon Linux container images\. To run a container without the default *seccomp* profile, add the following option to the docker command\.
+   **Note**
+   If *seccomp* is enabled, you might get an *EPERM* error when using Amazon Linux container images\. To run a container without the default *seccomp* profile, add the following option to the docker command\.
 
-```
---security-opt seccomp=unconfined
-```
+   ```
+   --security-opt seccomp=unconfined
+   ```
 
-This is the updated command\.
+   This is the updated command\.
 
-```
-docker run -it --security-opt seccomp=unconfined public.ecr.aws/amazonlinux/amazonlinux:2022 /bin/bash
-```
+   ```
+   docker run -it --security-opt seccomp=unconfined public.ecr.aws/amazonlinux/amazonlinux:2022 /bin/bash
+   ```
 
 **To pull the Amazon Linux container image from Docker Hub**
 
