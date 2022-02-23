@@ -16,8 +16,6 @@ Amazon's trademarks and trade dress may not be used in
 ## Contents
 + [Amazon Linux 2022 release notes](#relnotes)
    + [Amazon Linux 2022 release notes update 2021-12-14](#relnotes-20211214)
-   + [Amazon Linux 2022 release notes update 2021-12-06](#relnotes-20211206)
-   + [Amazon Linux 2022 release notes](#relnotes-al2022)
 + [Amazon Linux 2022 packages](#all-packages)
    + [Amazon Linux 2022 packages updated 2021-11-22](#all-packages-al2022)
 + [Compare package changes between Amazon Linux 2 and Amazon Linux 2022](#compare-packages)
@@ -62,73 +60,6 @@ This update of the Amazon Linux 2022 repository and AMI includes the following n
 **Minimal AMI**
 + `system-release-2022.0.20211210-0.amzn2022.noarch`
 
-
-### Amazon Linux 2022 release notes update 2021\-12\-06<a name="relnotes-20211206"></a>
-
-Amazon Linux 2022 was updated in preview on December 06, 2021\.
-
-#### Major updates<a name="major-updates"></a>
-
-Amazon Linux 2022 includes the following update\.
-+ **Updated NSS to fix CVE\-2021\-43527\.** – Network Security Services \(NSS\) up to and including 3\.73 is vulnerable to a heap overflow when handling DER\-encoded DSA or RSA\-PSS signatures\. Applications using NSS for handling signatures encoded within CMS, S/MIME, PKCS \\\#7, or PKCS \\\#12 are likely to be impacted\. Applications using NSS for certificate validation or other TLS, X\.509, OCSP, or CRL functionality might be impacted, depending on how they configure NSS\.
-
-  When verifying a DER\-encoded signature, NSS decodes the signature into a fixed\-size buffer and passes the buffer to the underlying PKCS \\\#11 module\. The length of the signature is not correctly checked when processing DSA and RSA\-PSS signatures\. When processing DSA and RSA\-PSS, signatures larger than 16384 bits will overflow the buffer in VFYContextStr\. The vulnerable code is located within secvfy\.c:vfy\_CreateContext\. \([CVE\-2021\-43527](https://alas.aws.amazon.com/cve/html/CVE-2021-43527.html)\)
-
-#### Updated AMI<a name="amis-20220202112010"></a>
-
-Amazon Linux 2022 includes the following updated AMI\.
-
-**Default AMI**
-+ `nspr-4.32.0-2.amzn2022.0.1.aarch64`
-+ `nss-3.71.0-2.amzn2022.0.1.aarch64`
-+ `nss-softokn-3.71.0-2.amzn2022.0.1.aarch64`
-+ `nss-softokn-freebl-3.71.0-2.amzn2022.0.1.aarch64`
-+ `nss-sysinit-3.71.0-2.amzn2022.0.1.aarch64`
-+ `nss-util-3.71.0-2.amzn2022.0.1.aarch64`
-+ `system-release-2022.0.20211201-0.amzn2022.noarch`
-
-**Minimal AMI**
-+ `system-release-2022.0.20211201-0.amzn2022.noarch`
-
-### Amazon Linux 2022 release notes<a name="relnotes-al2022"></a>
-
-Amazon Linux 2022 was released for preview on November 22, 2021\.
-
-#### New features<a name="new-features"></a>
-
-Amazon Linux 2022 includes the following features that were not available in Amazon Linux 2\.
-+ Instances are version locked\. The `dnf check-release-update` command can be used to discover the availability of new versions to update to on instances that launched from existing AMIs\.
-+ The `dnf supportinfo` command can be used to discover the support statements for any OS package\. As part of the technical preview, these are all example statements\. This will change by GA\.
-+ By default, SELinux is in enforcing mode\.
-+ `systemd-networkd` is now used to configure networking inside EC2\. It replaces `ec2-net-utils`\.
-+ The `systemd` Journal is now the preferred method of accessing logs\. By default, the text files located in `/var/log` that were provided in Amazon Linux 2 aren't longer enabled\.
-
-#### Removed features and packages<a name="removed-features-and-packages"></a>
-+ The following `aws-apitools` packages were part of Amazon Linux 2 but are not part of the Amazon Linux 2022\. For more information about the deprecation of these packages, see the thread [`aws-apitools-*` packages are now deprecated](https://forums.aws.amazon.com/thread.jspa?messageID=946597) in the AWS discussion forum\.
-  + `aws-apitools-as`
-  + `aws-apitools-cfn`
-  + `aws-apitools-common`
-  + `aws-apitools-ec2`
-  + `aws-apitools-elb`
-  + `aws-apitools-mon`
-+ Amazon Linux 2022 doesn't ship with any Python 2 packages\.
-
-#### Upcoming changes<a name="upcoming-changes"></a>
-
-Before Amazon Linux 2022 is released for general availability, we will make changes and improvements to the preview version\. 
-
-**Note**  
-During the preview, we're actively seeking your feedback about what to add to and modify in Amazon Linux 2022\. We also have a clear roadmap moving forward\.
-
-Notable upcoming changes during the tech preview include the following updates\.
-+ The Linux Kernel version will move to 5\.15\.
-+ OpenSSL 3 will be the default OpenSSL version\.
-
-The following features will be introduced to Amazon Linux 2022 before it is released for general availability\.
-+ Graphical environment \(such as MATE or GNOME\)
-+ Amazon Machine Images \(AMIs\) to use with GPU instances
-+ Container runtime
-+ Kernel Live Patching
 
 ## Amazon Linux 2022 packages<a name="all-packages"></a>
 
