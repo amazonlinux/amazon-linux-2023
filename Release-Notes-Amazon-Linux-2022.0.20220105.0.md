@@ -17,9 +17,6 @@ Amazon's trademarks and trade dress may not be used in
 + [Amazon Linux 2022 release notes](#relnotes)
    + [Planned changes](#planned-changes)
    + [Amazon Linux 2022 release notes update 2022-01-05](#relnotes-20220105)
-   + [Amazon Linux 2022 release notes update 2021-12-14](#relnotes-20211214)
-   + [Amazon Linux 2022 release notes update 2021-12-06](#relnotes-20211206)
-   + [Amazon Linux 2022 release notes](#relnotes-al2022)
 + [Amazon Linux 2022 packages](#all-packages)
    + [Amazon Linux 2022 packages updated 2022-01-05](#all-packages-al2022-20220105)
 + [Compare package changes between Amazon Linux 2 and Amazon Linux 2022](#compare-packages)
@@ -8771,82 +8768,6 @@ The repository includes the following updated packages\.
 |  \+vim\-data\-8\.2\.3642\-2\.amzn2022\.noarch  | 
 |  \+vim\-minimal\-8\.2\.3642\-2\.amzn2022\.x86\_64  | 
 
-### Amazon Linux 2022 release notes update 2021\-12\-14<a name="relnotes-20211214"></a>
-
-Amazon Linux 2022 was updated in preview on December 14, 2021\.
-
-#### Major updates<a name="major-updates-20211214"></a>
-
-Amazon Linux 2022 includes the following update\.
-+ Updates to Log4J2 package to remediate the issue disclosed in [CVE\-2021\-44228](https://alas.aws.amazon.com/cve/html/CVE-2021-44228.html)\. The issue disclosed in CVE\-2021\-44228 is relevant to Apache Log4j2 versions between 2\.0 and 2\.14\.1 when processing inputs from untrusted sources\. For more information, see [ALAS2022\-2021\-003](https://alas.aws.amazon.com/AL2022/ALAS-2021-003.html)\.
-
-#### Updated AMI<a name="amis-20220202112100"></a>
-
-This update of the Amazon Linux 2022 repository and AMI includes the following new packages\.
-
-**Repository**
-+ `log4j-slf4j-2.15.0-1.amzn2022.0.1.noarch`
-+ `log4j-2.15.0-1.amzn2022.0.1.noarch`
-+ `log4j-jcl-2.15.0-1.amzn2022.0.1.noarch`
-+ `log4j-2.15.0-1.amzn2022.0.1.src`
-+ `system-release-2022.0.20211210-0.amzn2022.noarch`
-
-**Default AMI**
-+ `system-release-2022.0.20211210-0.amzn2022.noarch`
-
-**Minimal AMI**
-+ `system-release-2022.0.20211210-0.amzn2022.noarch`
-
-### Amazon Linux 2022 release notes update 2021\-12\-06<a name="relnotes-20211206"></a>
-
-Amazon Linux 2022 was updated in preview on December 6, 2021\.
-
-#### Major updates<a name="major-updates-20211206"></a>
-
-Amazon Linux 2022 includes the following update\.
-+ **Updated NSS to fix CVE\-2021\-43527\.** – Network Security Services \(NSS\) up to and including 3\.73 is vulnerable to a heap overflow when handling DER\-encoded DSA or RSA\-PSS signatures\. Applications that use NSS for handling signatures that are encoded within CMS, S/MIME, PKCS \\\#7, or PKCS \\\#12 are likely to be impacted\. Applications that use NSS for certificate validation or other TLS, X\.509, OCSP, or CRL functionality might be impacted, depending on how they configure NSS\.
-
-  When verifying a DER\-encoded signature, NSS decodes the signature into a fixed\-size buffer and passes the buffer to the underlying PKCS \\\#11 module\. The length of the signature isn't correctly checked when processing DSA and RSA\-PSS signatures\. When processing DSA and RSA\-PSS, signatures larger than 16384 bits will overflow the buffer in VFYContextStr\. The vulnerable code is located within secvfy\.c:vfy\_CreateContext\. \([CVE\-2021\-43527](https://alas.aws.amazon.com/cve/html/CVE-2021-43527.html)\)
-
-#### Updated AMI<a name="amis-20220202112010"></a>
-
-Amazon Linux 2022 includes the following updated Amazon Machine Image \(AMI\)\.
-
-**Default AMI**
-+ `nspr-4.32.0-2.amzn2022.0.1.aarch64`
-+ `nss-3.71.0-2.amzn2022.0.1.aarch64`
-+ `nss-softokn-3.71.0-2.amzn2022.0.1.aarch64`
-+ `nss-softokn-freebl-3.71.0-2.amzn2022.0.1.aarch64`
-+ `nss-sysinit-3.71.0-2.amzn2022.0.1.aarch64`
-+ `nss-util-3.71.0-2.amzn2022.0.1.aarch64`
-+ `system-release-2022.0.20211201-0.amzn2022.noarch`
-
-**Minimal AMI**
-+ `system-release-2022.0.20211201-0.amzn2022.noarch`
-
-
-### Amazon Linux 2022 release notes<a name="relnotes-al2022"></a>
-
-Amazon Linux 2022 was released for preview on November 22, 2021\.
-
-#### New features<a name="new-features"></a>
-
-Amazon Linux 2022 includes the following features that weren't available in Amazon Linux 2\.
-+ Instances are version locked\. The `dnf check-release-update` command can be used to discover the availability of new versions to update to on instances that launched from existing AMIs\.
-+ The `dnf supportinfo` command can be used to discover the support statements for any OS package\. As part of the technical preview, these are all example statements\. This will change by the general availability \(GA\) release\.
-+ By default, SELinux is in enforcing mode\.
-+ `systemd-networkd` is now used to configure networking inside EC2\. It replaces `ec2-net-utils`\.
-+ The `systemd` Journal is now the preferred method of accessing logs\. By default, the text files that are located in `/var/log` that were provided in Amazon Linux 2 are no longer enabled\.
-
-#### Removed features and packages<a name="removed-features-and-packages"></a>
-+ The following `aws-apitools` packages were part of Amazon Linux 2 but aren't part of the Amazon Linux 2022\. For information about why these packages aren't supported, see the thread [`aws-apitools-*` packages are now deprecated](https://forums.aws.amazon.com/thread.jspa?messageID=946597) in the AWS discussion forum\.
-  + `aws-apitools-as`
-  + `aws-apitools-cfn`
-  + `aws-apitools-common`
-  + `aws-apitools-ec2`
-  + `aws-apitools-elb`
-  + `aws-apitools-mon`
-+ Amazon Linux 2022 doesn't ship with any Python 2 packages\.
 
 
 ## Amazon Linux 2022 packages<a name="all-packages"></a>
