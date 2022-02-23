@@ -70,7 +70,7 @@ Amazon Linux 2022 includes kernel live patching functionality. This enables you 
 
 ## How to get started
 ### Launching Amazon Linux 2022 via EC2 Management Console
-To launch an Amazon Linux 2022 instance from the EC2 Management Console, navigate to **EC2 Dashboard —> Images —> AMIs**, then select **Public images**, and use the search term "al2022-ami". Make sure that *amazon* is listed in the Owner column. Select the image from the list, click on the **Launch** button and follow the instructions.
+To launch an Amazon Linux 2022 instance from the EC2 Management Console, navigate to **EC2 Dashboard —> Images —> AMIs**, then select **Public images**, and use the search term "al2022-ami". Make sure that *amazon* is listed in the Owner alias column. Select the image from the list, click on the **Launch** button and follow the instructions.
 
 <img width="1134" alt="image" src="https://user-images.githubusercontent.com/93951337/142912261-32614cae-77c2-414c-9793-f1212fa98fa6.png">
 
