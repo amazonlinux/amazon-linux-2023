@@ -17,6 +17,7 @@
 - [Review the Release Notes](https://github.com/amazonlinux/amazon-linux-2022/blob/main/Release-Notes-Amazon-Linux-2022.0.20220210.0.md) for the AMI released on 2022-02-10
 - [Review the Release Notes](https://github.com/amazonlinux/amazon-linux-2022/blob/main/Release-Notes-Amazon-Linux-2022.0.20220308.0.md) for the AMI released on 2022-03-08
 - [Review the Release Notes](https://github.com/amazonlinux/amazon-linux-2022/blob/main/Release-Notes-Amazon-Linux-2022.0.20220315.0.md) for the AMI released on 2022-03-15
+- [Review the Release Notes](https://github.com/amazonlinux/amazon-linux-2022/blob/main/Release-Notes-Amazon-Linux-2022.0.20220419.0.md) for the AMI released on 2022-04-19
 
 
 ## Contact Us
