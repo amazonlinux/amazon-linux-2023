@@ -24,7 +24,7 @@ Amazon's trademarks and trade dress may not be used in
 + [Compare package changes between Amazon Linux 2 and Amazon Linux 2022](#compare-packages)
    + [New packages](#new-packages-al2022)
    + [Removed packages](#removed-packages-al2022)
-   + [Amazon Linux 2022 packages](#version-compare-al2022)
+   + [Updated packages](#updated-packages-al2022)
 
 
 
@@ -53,7 +53,7 @@ The following features will be introduced to Amazon Linux 2022 before it is rele
 
 
 
-# Amazon Linux 2022 release notes update 20220504<a name="relnotes-20220504"></a>
+# Amazon Linux 2022 release notes update 2022\-05\-04<a name="relnotes-20220504"></a>
 
 Amazon Linux 2022 was updated in preview May 4, 2022\.
 
@@ -61,14 +61,11 @@ Amazon Linux 2022 was updated in preview May 4, 2022\.
 
 Amazon Linux 2022 includes the following update\.
 
-This update of the Amazon Linux 2022 AMI includes the following update\.
-+ `ec2-instance-connect is now available on AL2022. There is a current known issue where you will need to enable SSH-RSA on the instance in order to connect to an AL2022 instance in order to use EC2 Instance Connect to connect to an AL2022 instance. This will be resolved in a future update.`
+`ec2-instance-connect` is now available on Amazon Linux 2022\. There is a current known issue where you will need to enable `SSH-RSA` on the instance in order to connect to an Amazon Linux 2022 instance in order to use `EC2 Instance Connect` to connect to an Amazon Linux 2022 instance\. This will be resolved in a future update\.
 
 ## Kernel updates<a name="kernel-updates"></a>
 
-Amazon Linux 2022 includes the following update\.
-
-This update of the Amazon Linux 2022 AMI includes no major updates\.
+No major updates\.
 
 ## Repo updates<a name="repo-updates"></a>
 
@@ -112,57 +109,93 @@ This update of the Amazon Linux 2022 repository and AMI includes the following n
 
 | Container image | 
 | --- | 
-|  `gnutls-3.7.2-2.amzn2022.0.1.x86_64`  | 
-|  `libgcc-11.2.1-9.amzn2022.0.1.x86_64`  | 
-|  `libgomp-11.2.1-9.amzn2022.0.1.x86_64`  | 
-|  `libstdc++-11.2.1-9.amzn2022.0.1.x86_64`  | 
-|  `system-release-2022.0.20220419-1.amzn2022.noarch`  | 
-|  `tzdata-2022a-1.amzn2022.noarch`  | 
+|  `curl-7.79.1-2.amzn2022.x86_64`  | 
+|  `curl-7.79.1-2.amzn2022.aarch64`  | 
+|  `expat-2.4.7-1.amzn2022.x86_64`  | 
+|  `expat-2.4.7-1.amzn2022.aarch64`  | 
+|  `libarchive-3.5.3-1.amzn2022.x86_64`  | 
+|  `libarchive-3.5.3-1.amzn2022.aarch64`  | 
+|  `libcurl-7.79.1-2.amzn2022.x86_64`  | 
+|  `libcurl-7.79.1-2.amzn2022.aarch64`  | 
+|  `libgcc-11.2.1-10.amzn2022.0.1.x86_64`  | 
+|  `libgcc-11.2.1-10.amzn2022.0.1.aarch64`  | 
+|  `libgomp-11.2.1-10.amzn2022.0.1.x86_64`  | 
+|  `libgomp-11.2.1-10.amzn2022.0.1.aarch64`  | 
+|  `libstdc++-11.2.1-10.amzn2022.0.1.x86_64`  | 
+|  `libstdc++-11.2.1-10.amzn2022.0.1.aarch64`  | 
+|  `system-release-2022.0.20220504-0.amzn2022.noarch`  | 
+|  `xz-libs-5.2.5-9.amzn2022.x86_64`  | 
+|  `xz-libs-5.2.5-9.amzn2022.aarch64`  | 
 
 **Default AMI**
 
 
 | Default image | 
 | --- | 
-|  `cpp-11.2.1-9.amzn2022.0.1.x86_64`  | 
-|  `efi-filesystem-5-4.amzn2022.0.3.noarch`  | 
-|  `gcc-11.2.1-9.amzn2022.0.1.x86_64`  | 
-|  `gcc-c++-11.2.1-9.amzn2022.0.1.x86_64`  | 
-|  `gnutls-3.7.2-2.amzn2022.0.1.x86_64`  | 
-|  `grub2-common-2.06-22.amzn2022.0.1.noarch`  | 
-|  `grub2-efi-x64-ec2-2.06-22.amzn2022.0.1.x86_64`  | 
-|  `grub2-pc-modules-2.06-22.amzn2022.0.1.noarch`  | 
-|  `grub2-tools-2.06-22.amzn2022.0.1.x86_64`  | 
-|  `grub2-tools-minimal-2.06-22.amzn2022.0.1.x86_64`  | 
-|  `kernel-5.15.29-16.111.amzn2022.x86_64`  | 
-|  `kernel-headers-5.15.29-16.111.amzn2022.x86_64`  | 
-|  `kernel-tools-5.15.29-16.111.amzn2022.x86_64`  | 
-|  `libgcc-11.2.1-9.amzn2022.0.1.x86_64`  | 
-|  `libgomp-11.2.1-9.amzn2022.0.1.x86_64`  | 
-|  `libstdc++-11.2.1-9.amzn2022.0.1.x86_64`  | 
-|  `libstdc++-devel-11.2.1-9.amzn2022.0.1.x86_64`  | 
-|  `libuv-1.44.1-154.amzn2022.x86_64`  | 
-|  `system-release-2022.0.20220419-1.amzn2022.noarch`  | 
-|  `tzdata-2022a-1.amzn2022.noarch`  | 
+|  `cpp-11.2.1-10.amzn2022.0.1.x86_64`  | 
+|  `cpp-11.2.1-10.amzn2022.0.1.aarch64`  | 
+|  `curl-7.79.1-2.amzn2022.x86_64`  | 
+|  `curl-7.79.1-2.amzn2022.aarch64`  | 
+|  `ec2-instance-connect-1.1-16.amzn2022.noarch`  | 
+|  `ec2-instance-connect-selinux-1.1-16.amzn2022.noarch`  | 
+|  `expat-2.4.7-1.amzn2022.x86_64`  | 
+|  `expat-2.4.7-1.amzn2022.aarch64`  | 
+|  `gcc-11.2.1-10.amzn2022.0.1.x86_64`  | 
+|  `gcc-11.2.1-10.amzn2022.0.1.aarch64`  | 
+|  `gcc-c++-11.2.1-10.amzn2022.0.1.x86_64`  | 
+|  `gcc-c++-11.2.1-10.amzn2022.0.1.aarch64`  | 
+|  `gzip-1.10-5.amzn2022.x86_64`  | 
+|  `gzip-1.10-5.amzn2022.aarch64`  | 
+|  `libarchive-3.5.3-1.amzn2022.x86_64`  | 
+|  `libarchive-3.5.3-1.amzn2022.aarch64`  | 
+|  `libasan-11.2.1-10.amzn2022.0.1.aarch64`  | 
+|  `libatomic-11.2.1-10.amzn2022.0.1.aarch64`  | 
+|  `libcurl-7.79.1-2.amzn2022.x86_64`  | 
+|  `libcurl-7.79.1-2.amzn2022.aarch64`  | 
+|  `libgcc-11.2.1-10.amzn2022.0.1.x86_64`  | 
+|  `libgcc-11.2.1-10.amzn2022.0.1.aarch64`  | 
+|  `libgomp-11.2.1-10.amzn2022.0.1.x86_64`  | 
+|  `libgomp-11.2.1-10.amzn2022.0.1.aarch64`  | 
+|  `libstdc++-11.2.1-10.amzn2022.0.1.x86_64`  | 
+|  `libstdc++-11.2.1-10.amzn2022.0.1.aarch64`  | 
+|  `libstdc++-devel-11.2.1-10.amzn2022.0.1.x86_64`  | 
+|  `libstdc++-devel-11.2.1-10.amzn2022.0.1.aarch64`  | 
+|  `libubsan-11.2.1-10.amzn2022.0.1.aarch64`  | 
+|  `openssl-3.0.0-1.amzn2022.0.1.x86_64`  | 
+|  `openssl-3.0.0-1.amzn2022.0.1.aarch64`  | 
+|  `policycoreutils-python-utils-3.2-1.amzn2022.noarch`  | 
+|  `system-release-2022.0.20220504-0.amzn2022.noarch`  | 
+|  `xz-5.2.5-9.amzn2022.x86_64`  | 
+|  `xz-5.2.5-9.amzn2022.aarch64`  | 
+|  `xz-libs-5.2.5-9.amzn2022.x86_64`  | 
+|  `xz-libs-5.2.5-9.amzn2022.aarch64`  | 
 
 **Minimal AMI**
 
 
 | Minimal image | 
 | --- | 
-|  `efi-filesystem-5-4.amzn2022.0.3.noarch`  | 
-|  `gnutls-3.7.2-2.amzn2022.0.1.x86_64`  | 
-|  `grub2-common-2.06-22.amzn2022.0.1.noarch`  | 
-|  `grub2-efi-x64-ec2-2.06-22.amzn2022.0.1.x86_64`  | 
-|  `grub2-pc-modules-2.06-22.amzn2022.0.1.noarch`  | 
-|  `grub2-tools-2.06-22.amzn2022.0.1.x86_64`  | 
-|  `grub2-tools-minimal-2.06-22.amzn2022.0.1.x86_64`  | 
-|  `kernel-5.15.29-16.111.amzn2022.x86_64`  | 
-|  `libgcc-11.2.1-9.amzn2022.0.1.x86_64`  | 
-|  `libgomp-11.2.1-9.amzn2022.0.1.x86_64`  | 
-|  `libstdc++-11.2.1-9.amzn2022.0.1.x86_64`  | 
-|  `system-release-2022.0.20220419-1.amzn2022.noarch`  | 
-|  `tzdata-2022a-1.amzn2022.noarch`  | 
+|  `curl-7.79.1-2.amzn2022.x86_64`  | 
+|  `curl-7.79.1-2.amzn2022.aarch64`  | 
+|  `expat-2.4.7-1.amzn2022.x86_64`  | 
+|  `expat-2.4.7-1.amzn2022.aarch64`  | 
+|  `gzip-1.10-5.amzn2022.x86_64`  | 
+|  `gzip-1.10-5.amzn2022.aarch64`  | 
+|  `libarchive-3.5.3-1.amzn2022.x86_64`  | 
+|  `libarchive-3.5.3-1.amzn2022.aarch64`  | 
+|  `libcurl-7.79.1-2.amzn2022.x86_64`  | 
+|  `libcurl-7.79.1-2.amzn2022.aarch64`  | 
+|  `libgcc-11.2.1-10.amzn2022.0.1.x86_64`  | 
+|  `libgcc-11.2.1-10.amzn2022.0.1.aarch64`  | 
+|  `libgomp-11.2.1-10.amzn2022.0.1.x86_64`  | 
+|  `libgomp-11.2.1-10.amzn2022.0.1.aarch64`  | 
+|  `libstdc++-11.2.1-10.amzn2022.0.1.x86_64`  | 
+|  `libstdc++-11.2.1-10.amzn2022.0.1.aarch64`  | 
+|  `system-release-2022.0.20220504-0.amzn2022.noarch`  | 
+|  `xz-5.2.5-9.amzn2022.x86_64`  | 
+|  `xz-5.2.5-9.amzn2022.aarch64`  | 
+|  `xz-libs-5.2.5-9.amzn2022.x86_64`  | 
+|  `xz-libs-5.2.5-9.amzn2022.aarch64`  | 
 
 
 
@@ -170,14 +203,11 @@ This update of the Amazon Linux 2022 repository and AMI includes the following n
 
 This section includes lists of all packages for each release of Amazon Linux 2022\.
 
-**Note**  
-The PDF version of this guide includes only the most recent package list\.
-
 
 
 # Amazon Linux 2022 packages updated 2022\-05\-04<a name="all-packages-al2022-20220504"></a>
 
-The following list includes all packages for Amazon Linux 2022\.0\.20220504 update released on May 4, 2022\.
+The following list includes all packages for Amazon Linux 2022\.0\.20220504\.1 update released on May 4, 2022\.
 
 ## Core packages<a name="core-packages"></a>
 
@@ -187,9 +217,9 @@ For more information about support for major versions of Amazon Linux, see [Amaz
 
 ## All packages<a name="list-packages"></a>
 
-The following list includes all packages for \.
+The following list includes all packages for Amazon Linux 2022\.
 
-There are 3487 packages in \.
+There are 3487 packages in Amazon Linux 2022\.
 
 
 | Package | Version | 
@@ -3512,7 +3542,7 @@ There are 3487 packages in \.
 |   `syslinux`   |   `6.04-0.17.amzn2022`   | 
 |   `sysprof`   |   `3.40.1-2.amzn2022`   | 
 |   `sysstat`   |   `12.5.4-1.amzn2022`   | 
-|   `system-release`   |   `2022.0.20220504-0.amzn2022`   | 
+|   `system-release`   |   `2022.0.20220504.1-0.amzn2022`   | 
 |   `systemd`   |   `248.10-1.amzn2022.0.1`   | 
 |   `systemtap`   |   `4.5-1.amzn2022`   | 
 |   `t1lib`   |   `5.1.2-29.amzn2022`   | 
@@ -3686,21 +3716,15 @@ There are 3487 packages in \.
 
 # Compare package changes between Amazon Linux 2 and Amazon Linux 2022<a name="compare-packages"></a>
 
-This release includes changes to the packages and package versions that are used in Amazon Linux 2022\.0\.20220504\. Some packages from Amazon Linux 2 aren't used in Amazon Linux 2022, some packages are new for Amazon Linux 2022, and some packages that were present in Amazon Linux 2 use new versions in Amazon Linux 2022\.
+This release includes changes to the packages and package versions that are used in Amazon Linux 2022\.0\.20220504\.1\. Some packages from Amazon Linux 2 aren't used in Amazon Linux 2022, some packages are new for Amazon Linux 2022, and some packages that were present in Amazon Linux 2 use new versions in Amazon Linux 2022\.
 
 
 
-# New packages<a name="new-packages-al2022"></a>
-
-The following list includes all new packages for Amazon Linux 2022\.
+# New packages for Amazon Linux 2022<a name="new-packages-al2022"></a>
 
 ## New packages<a name="new-list-packages"></a>
 
-The following list includes only the packages that are new for Amazon Linux 2022\.
-
-There are 2119 packages new to Amazon Linux 2022\.
-
-New packages in Amazon Linux 2022\.
+There are 2119 packages new for Amazon Linux 2022\.
 
 
 | Package | 
@@ -7181,7 +7205,7 @@ There are 1338 packages that were in Amazon Linux 2 that are not a part of Amazo
 
 
 
-# Amazon Linux 2022 packages<a name="version-compare-al2022"></a>
+# Updated packages<a name="updated-packages-al2022"></a>
 
 The following list compares package versions for Amazon Linux 2 and Amazon Linux 2022\.
 
@@ -8442,7 +8466,7 @@ There are 1368 updated packages in Amazon Linux 2022\.
 |   `sysfsutils`   |   `2.1.0-16.amzn2.0.2`   |   `2.1.1-1.amzn2022`   | 
 |   `syslinux`   |   `4.05-13.amzn2.0.1`   |   `6.04-0.17.amzn2022`   | 
 |   `sysstat`   |   `10.1.5-18.amzn2.0.1`   |   `12.5.4-1.amzn2022`   | 
-|   `system-release`   |   `2-14.amzn2`   |   `2022.0.20220504-0.amzn2022`   | 
+|   `system-release`   |   `2-14.amzn2`   |   `2022.0.20220504.1-0.amzn2022`   | 
 |   `systemd`   |   `219-78.amzn2.0.16`   |   `248.10-1.amzn2022.0.1`   | 
 |   `systemtap`   |   `4.4-1.amzn2.0.2`   |   `4.5-1.amzn2022`   | 
 |   `t1lib`   |   `5.1.2-14.amzn2.0.2`   |   `5.1.2-29.amzn2022`   | 
