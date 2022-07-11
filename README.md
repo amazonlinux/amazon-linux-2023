@@ -96,10 +96,10 @@ Resources:
 ```
 
 Make sure to replace the AMI alias section if needed. The following aliases are available:
-- *al2022-ami-kernel-5.10-arm64* for arm64 architecture
-- *al2022-ami-minimal-kernel-5.10-arm64* for arm64 architecture (minimal AMI)
-- *al2022-ami-kernel-5.10-x86_64* for x86_64 architecture
-- *al2022-ami-minimal-kernel-5.10-x86_64* for x86_64 architecture (minimal AMI)
+- *al2022-ami-kernel-5.15-arm64* for arm64 architecture
+- *al2022-ami-minimal-kernel-5.15-arm64* for arm64 architecture (minimal AMI)
+- *al2022-ami-kernel-5.15-x86_64* for x86_64 architecture
+- *al2022-ami-minimal-kernel-5.15-x86_64* for x86_64 architecture (minimal AMI)
 
 ### Launching Amazon Linux 2022 using specific AMI ID
 You can launch specific Amazon Linux 2022 AMI using its AMI ID. You can determine the needed Amazon Linux 2022 AMI ID by looking at the AMI list in the EC2 Management Console or by using SSM. If you are using SSM, please refer to this [article](https://aws.amazon.com/blogs/compute/query-for-the-latest-amazon-linux-ami-ids-using-aws-systems-manager-parameter-store/) for details and make sure to indicate the AMI aliases from the section above.
