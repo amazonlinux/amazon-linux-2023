@@ -86,7 +86,7 @@ To launch the latest Amazon Linux 2022 AMI using CloudFormation, you can use the
 Parameters:
   LatestAmiId:
     Type: 'AWS::SSM::Parameter::Value<AWS::EC2::Image::Id>'
-    Default: '/aws/service/ami-amazon-linux-latest/al2022-ami-kernel-5.10-arm64'
+    Default: '/aws/service/ami-amazon-linux-latest/al2022-ami-kernel-5.15-arm64'
 
 Resources:
  Instance:
