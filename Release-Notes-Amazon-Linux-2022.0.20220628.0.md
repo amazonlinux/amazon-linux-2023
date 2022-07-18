@@ -55,7 +55,9 @@ Amazon Linux 2022 was updated in preview June 28, 2022\.
 ## Major updates<a name="major-updates-20220628"></a>
 
 Amazon Linux 2022 includes the following update\.
-+ Amazon Linux 2022 has migrated to AWS CLI v2.
++ AWS CLI v2 replaces AWS CLI v1\.
++ `rsyslog` is no longer installed by default in the AMIs\. If you rely on text based log files and cannot readily adapt to using the `systemd journal` then you can install `rsyslog` to regain that functionality\.
++ The AMIs now contain `curl-minimal` by default, a smaller `curl` without support for many seldom\-used protocols\. If you require the use of such protocols, you can `dnf install -y --allowerasing curl-full libcurl-full`
 
 ## Updated AMI<a name="amis-2022020220628"></a>
 
