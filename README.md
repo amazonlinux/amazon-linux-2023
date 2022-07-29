@@ -1,8 +1,12 @@
-# Amazon Linux 2022 - In Preview
+# Amazon Linux 2022 - Release Candidate
 
 **Welcome to Amazon Linux 2022!**
 
-[Amazon Linux 2022](https://aws.amazon.com/linux/amazon-linux-2022) is the next generation of Amazon Linux from [Amazon Web Services](https://aws.amazon.com/) (AWS). It provides a stable, and high-performance execution environment to develop and run cloud applications. With Amazon Linux 2022, you get an application environment that offers long term support with access to the latest innovations in Linux. Using Fedora as the upstream, AL2022 is a stable distribution that has gone through extensive testing to offer package stability and is maintained and managed with all necessary security updates. Amazon Linux 2022 is provided at no additional charge.
+[Amazon Linux 2022](https://aws.amazon.com/linux/amazon-linux-2022) is the next generation of Amazon Linux from [Amazon Web Services](https://aws.amazon.com/) (AWS). It provides a stable, and high-performance execution environment to develop and run cloud applications. With Amazon Linux 2022 (AL2022), you get an application environment that offers long term support with access to the latest innovations in Linux. Using Fedora as the upstream, AL2022 is a stable distribution that has gone through extensive testing to offer package stability and is maintained and managed with all necessary security updates. Amazon Linux 2022 is provided at no additional charge.
+
+The first Release Candidate of AL2022 is now available for testing. A release candidate is a GA-like distribution (the feature set is frozen, and no major changes are expected between the Release Candidate and the Generally Available version) that will only receive patches and bug fixes leading to the AL2022 Generally Available release, with very few other changes. A Release Candidate AL2022 AMI will contain a date equal to or later than **20220728** within its name. For example, al2022-ami-2022.0.*20220728*.0-kernel-5.15-x86_64 is a Release Candidate AMI, while al2022-ami-2022.0.*20220419*.0-kernel-5.15-x86_64 is not.
+
+**The Release Candidate is not recommended for production workloads and is intended only for testing purposes and to help you prepare for migration to Amazon Linux 2022**.
 
 **Quick links**
 - [Learn how to get started with Amazon Linux 2022](https://github.com/amazonlinux/amazon-linux-2022#how-to-get-started)
@@ -38,7 +42,7 @@ Our supported architectures include *x86_64* and *aarch64* (written as arm64 in 
 Please note: Amazon Linux 2022 *does not* support A1 instances. Only instances based on Graviton2 and later generation processors are supported.
 
 ## Upcoming changes
-During the preview, we're actively seeking your feedback about what to add to and modify in Amazon Linux 2022. We also have a clear [roadmap](https://github.com/amazonlinux/amazon-linux-2022/projects/1) moving forward. If you would like to request a feature, please let us know by submitting a [request](https://github.com/amazonlinux/amazon-linux-2022/issues/new/choose).
+The first Release Candidate of AL2022 is now available for testing. Now is the ideal time to validate your services and solutions on AL2022. We are actively seeking your feedback about what to add to and modify in Amazon Linux 2022. We also have a clear [roadmap](https://github.com/amazonlinux/amazon-linux-2022/projects/1) moving forward. If you would like to request a feature, please let us know by submitting a [request](https://github.com/amazonlinux/amazon-linux-2022/issues/new/choose).
 
 
 
@@ -55,7 +59,7 @@ Based on Fedora, AL2022 provides frequent and flexible quarterly updates. AL2022
 New Amazon Linux major versions will be available every two years and each major version, including AL2022, will come with five years of long term support. 
 
 **High security standard:**
-AL2022 has a high security standard and comes with SELinux enabled and enforced by default to help you meet your compliance needs. AL2022 also allows you to set security policies at boot time.
+Major applications within AL2022 come with pre-configured SELinux policies to help you meet your compliance needs. AL2022 also allows you to set security policies at boot time.
 
 ## Notable features of Amazon Linux 2022
 **Predictable two-year major release cycle and long-term support:**
@@ -74,7 +78,7 @@ Amazon Linux 2022 gives customers control over how and when they choose updates 
 Many hardening features are enabled by default. This includes secure-boot related features such as kernel module signing, and making the kernel lockdown feature available.
 
 **Kernel Live Patching:**
-Amazon Linux 2022 includes kernel live patching functionality. This enables you to patch critical and important security vulnerabilities in the Linux kernel without reboot or downtime. [Not available in Preview]
+Amazon Linux 2022 includes kernel live patching functionality. This enables you to patch critical and important security vulnerabilities in the Linux kernel without reboot or downtime. [Not available until AL2022 GA]
 
 ## How to get started
 ### Launching Amazon Linux 2022 via EC2 Management Console
