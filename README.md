@@ -18,20 +18,20 @@ The first Release Candidate of AL2022 is now available for testing. A release ca
 
 
 ## Contact Us
-If you find a security issue, please [contact our security team](https://github.com/amazonlinux/amazon-linux-2022/security/policy) rather than opening an issue.
+If you find a security issue, [contact our security team](https://github.com/amazonlinux/amazon-linux-2022/security/policy) rather than opening an issue.
 
 We use GitHub issues to gather feedback about Amazon Linux 2022, track bug reports and feature requests. You can look at existing [issues](https://github.com/amazonlinux/amazon-linux-2022/issues) to see whether your concern is already known. If not, you can select from a few templates. Contact us with a new issue [here](https://github.com/amazonlinux/amazon-linux-2022/issues/new/choose). We will respond to your request within 48 business hours.
 
-If you just have questions about Amazon Linux 2022, please feel free to start or join a [discussion](https://github.com/amazonlinux/amazon-linux-2022/discussions). Feedback on Amazon Linux 2022 can also be provided through your designated AWS representative or [Amazon Linux Discussion Forum](https://forums.aws.amazon.com/forum.jspa?forumID=228). 
+If you just have questions about Amazon Linux 2022, feel free to start or join a [discussion](https://github.com/amazonlinux/amazon-linux-2022/discussions). Feedback on Amazon Linux 2022 can also be provided through your designated AWS representative.
 
 
 ## Architectures
 Our supported architectures include *x86_64* and *aarch64* (written as arm64 in some contexts). Amazon Linux 2022 does not ship any i686 packages for runtime compatibility with 32bit x86 code.
 
-Please note: Amazon Linux 2022 *does not* support A1 instances. Only instances based on Graviton2 and later generation processors are supported.
+Note: Amazon Linux 2022 *does not* support A1 instances. Only instances based on Graviton2 and later generation processors are supported.
 
 ## Upcoming changes
-The first Release Candidate of AL2022 is now available for testing. Now is the ideal time to validate your services and solutions on AL2022. We are actively seeking your feedback about what to add to and modify in Amazon Linux 2022. We also have a clear [roadmap](https://github.com/amazonlinux/amazon-linux-2022/projects/1) moving forward. If you would like to request a feature, please let us know by submitting a [request](https://github.com/amazonlinux/amazon-linux-2022/issues/new/choose).
+The first Release Candidate of AL2022 is now available for testing. Now is the ideal time to validate your services and solutions on AL2022. We are actively seeking your feedback about what to add to and modify in Amazon Linux 2022. We also have a clear [roadmap](https://github.com/amazonlinux/amazon-linux-2022/projects/1) moving forward. If you would like to request a feature, let us know by submitting a [request](https://github.com/amazonlinux/amazon-linux-2022/issues/new/choose).
 
 
 
