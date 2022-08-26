@@ -20,9 +20,9 @@ The first Release Candidate of AL2022 is now available for testing. A release ca
 ## Contact Us
 If you find a security issue, [contact our security team](https://github.com/amazonlinux/amazon-linux-2022/security/policy) rather than opening an issue.
 
-We use GitHub issues to gather feedback about Amazon Linux 2022, track bug reports and feature requests. You can look at existing [issues](https://github.com/amazonlinux/amazon-linux-2022/issues) to see whether your concern is already known. If not, you can select from a few templates. Contact us with a new issue [here](https://github.com/amazonlinux/amazon-linux-2022/issues/new/choose). We will respond to your request within 48 business hours.
+We use GitHub issues to gather feedback about Amazon Linux 2022 and to track bug reports and feature requests. You can look at [existing issues](https://github.com/amazonlinux/amazon-linux-2022/issues) to see whether your concern is already known. If it is not, you can open a [new issue](https://github.com/amazonlinux/amazon-linux-2022/issues/new/choose).
 
-If you just have questions about Amazon Linux 2022, feel free to start or join a [discussion](https://github.com/amazonlinux/amazon-linux-2022/discussions). Feedback on Amazon Linux 2022 can also be provided through your designated AWS representative.
+If you just have questions about Amazon Linux 2022, you can start or join a [discussion](https://github.com/amazonlinux/amazon-linux-2022/discussions). Feedback on Amazon Linux 2022 can also be provided through your designated AWS representative.
 
 
 ## Architectures
