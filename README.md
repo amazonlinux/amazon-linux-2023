@@ -15,7 +15,7 @@ The first Release Candidate of AL2022 is now available for testing. A release ca
 - [Look at our roadmap to learn of the upcoming features](https://github.com/amazonlinux/amazon-linux-2022/projects/1)
 - [Review Release Notes](https://github.com/amazonlinux/amazon-linux-2022/blob/main/Release%20Notes.md) for the AL2022 Preview AMIs
 - [Review Release Notes](https://github.com/amazonlinux/amazon-linux-2022/blob/main/Release-Notes-Amazon-Linux-2022.0.20220728.0.md) for the AL2022 Release Candidate 0 Released on 2022-07-28
-- [Review Release Notes](https://github.com/amazonlinux/amazon-linux-2022/blob/main/Release-Notes-Amazon-Linux-2022.0.2022.831.md) for the AL2022 Release Candidate 0=1 Released on 2022-08-31
+- [Review Release Notes](https://github.com/amazonlinux/amazon-linux-2022/blob/main/Release-Notes-Amazon-Linux-2022.0.2022.831.md) for the AL2022 Release Candidate 1 Released on 2022-08-31
 
 
 ## Contact Us
