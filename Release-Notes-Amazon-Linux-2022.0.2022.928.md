@@ -16,9 +16,9 @@ Amazon's trademarks and trade dress may not be used in
 ## Contents
 + [Amazon Linux 2022 release notes](#relnotes)
    + [Planned changes](#planned-changes)
-   + [Amazon Linux 2022 release notes update 2022-09-21](#relnotes-20220921)
+   + [Amazon Linux 2022 release notes update 2022-09-28](#relnotes-20220928)
 + [Amazon Linux 2022 packages](#all-packages)
-   + [Amazon Linux 2022 packages updated 2022-09-21](#all-packages-al2022-20220921)
+   + [Amazon Linux 2022 packages updated 2022-09-28](#all-packages-al2022-20220928)
 + [Compare package changes between Amazon Linux 2 and Amazon Linux 2022](#compare-packages)
    + [Amazon Linux 2022 packages](#version-compare-al2022)
    + [New packages](#new-list-packages)
@@ -31,12 +31,12 @@ This section contains upcoming changes and ongoing release notes for Amazon Linu
 
 **Topics**
 + [Planned changes](#planned-changes)
-+ [Amazon Linux 2022 release notes update 2022\-09\-21](#relnotes-20220921)
++ [Amazon Linux 2022 release notes update 2022\-09\-28](#relnotes-20220928)
 
 ### Planned changes<a name="planned-changes"></a>
 
 Upcoming Changes in future Release Candidate AMIs and repos\.
-+ The legacy `pcre` package will be removed post `RC01` and will be completely replaced by the more modern `pcre2` package\.
++ The legacy `pcre` package will be removed post `RC1` and will be completely replaced by the more modern `pcre2` package\.
 + The kernel package will see changes to improve aspects of security and performance, and, while core functionality will be maintained, some unused or deprecated features may be removed in future Release Candidates\.
 
 **Note**  
@@ -50,13 +50,13 @@ The following features will be introduced to Amazon Linux 2022 before it is rele
 + Container runtime
 + Kernel live patching
 ---
-# Amazon Linux 2022 release notes update 2022\-08\-31<a name="relnotes-20220921"></a>
+# Amazon Linux 2022 release notes update 2022\-09\-28<a name="relnotes-20220928"></a>
 
-Amazon Linux 2022 was updated in preview August 31, 2022\.
+Amazon Linux 2022 was updated in preview September 28, 2022\.
 
-## Major updates<a name="major-updates-20220921"></a>
+## Major updates<a name="major-updates-20220928"></a>
 
-This release represents an *updated* Release Candidate \(RC\) for Amazon Linux 2022 \(AL2022\) \- **RC1**\. A release candidate is a GA\-like distribution \(the feature set is frozen, and no major changes are expected between the Release Candidate and the Generally Available version\) that will only receive patches and bug fixes leading to the Amazon Linux 2022 Generally Available release, with very few other changes\. The Release Candidate is not recommend for production workloads and is intended only for testing purposes and to help you prepare for migration to Amazon Linux 2022\.
+This release represents an *updated* Release Candidate \(RC\) for Amazon Linux 2022 \(AL2022\) \- **RC2**\. A release candidate is a GA\-like distribution \(the feature set is frozen, and no major changes are expected between the Release Candidate and the Generally Available version\) that will only receive patches and bug fixes leading to the Amazon Linux 2022 Generally Available release, with very few other changes\. The Release Candidate is not recommend for production workloads and is intended only for testing purposes and to help you prepare for migration to Amazon Linux 2022\.
 
 Amazon Linux 2022 includes the following major update\.
 + This release represents the updated Release Candidate \(RC1\) for Amazon Linux 2022\. You can use the Release Candidate to test compatibility with your applications or prepare for migration to Amazon Linux 2022\.
@@ -80,7 +80,7 @@ We use GitHub issues to gather feedback about Amazon Linux 2022 and to track bug
 
 If you just have questions about Amazon Linux 2022, please feel free to start or join a [discussion](https://github.com/amazonlinux/amazon-linux-2022/discussions)\. Feedback on Amazon Linux 2022 can also be provided through your designated AWS representative\.
 
-## Major changes from the first Tech Preview release to RC0\<a name="major-changes-20220921"></a>
+## Major changes from the first Tech Preview release to RC0\<a name="major-changes-20220928"></a>
 + Kernel updated from 5\.10 to 5\.15
 + OpenSSL updated from 1\.1 to 3\.0
 + AWS CLI updated to AWS CLI v2
@@ -94,7 +94,7 @@ If you just have questions about Amazon Linux 2022, please feel free to start or
 
 
 
-## Updated AMI<a name="amis-2022020220921"></a>
+## Updated AMI<a name="amis-2022020220928"></a>
 
 **Repository**
 
@@ -359,9 +359,9 @@ Minimal AMI
 This section includes lists of all packages for this release of Amazon Linux 2022\.
 
 **Topics**
-+ [Amazon Linux 2022 packages updated 2022\-09\-21](#all-packages-al2022-20220921)
++ [Amazon Linux 2022 packages updated 2022\-09\-28](#all-packages-al2022-20220928)
 
-# Amazon Linux 2022 packages updated 2022\-09\-21<a name="all-packages-al2022-20220921"></a>
+# Amazon Linux 2022 packages updated 2022\-09\-28<a name="all-packages-al2022-20220928"></a>
 
 ### Core packages<a name="core-packages"></a>
 
@@ -371,7 +371,7 @@ For more information about support for major versions of Amazon Linux, see [Amaz
 
 ### All packages<a name="list-packages"></a>
 
-The following list includes all packages for Amazon Linux 2022\.0\.20220921 update released on September 14, 2022\.
+The following list includes all packages for Amazon Linux 2022\.0\.20220928 update released on September 28, 2022\.
 
 There are 2195 packages in Amazon Linux 2022\.
 
@@ -2578,7 +2578,7 @@ There are 2195 packages in Amazon Linux 2022\.
 
 ## Compare package changes between Amazon Linux 2 and Amazon Linux 2022<a name="compare-packages"></a>
 
-This release includes changes to the packages and package versions that are used in Amazon Linux 2022\.0\.20220202\. Some packages from Amazon Linux 2 aren't used in Amazon Linux 2022, some packages are new for Amazon Linux 2022, and some packages that were present in Amazon Linux 2 use new versions in Amazon Linux 2022\.
+This release includes changes to the packages and package versions that are used in Amazon Linux 2022\.0\.202200928\. Some packages from Amazon Linux 2 aren't used in Amazon Linux 2022, some packages are new for Amazon Linux 2022, and some packages that were present in Amazon Linux 2 use new versions in Amazon Linux 2022\.
 
 ### Amazon Linux 2022 packages<a name="version-compare-al2022"></a>
 
