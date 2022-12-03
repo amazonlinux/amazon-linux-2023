@@ -23,7 +23,8 @@ If you find a security issue, [contact our security team](https://github.com/ama
 
 We use GitHub issues to gather feedback about Amazon Linux 2022 and to track bug reports and feature requests. You can look at [existing issues](https://github.com/amazonlinux/amazon-linux-2022/issues) to see whether your concern is already known. If it is not, you can open a [new issue](https://github.com/amazonlinux/amazon-linux-2022/issues/new/choose).
 
-If you just have questions about Amazon Linux 2022, you can start or join a [discussion](https://github.com/amazonlinux/amazon-linux-2022/discussions). Feedback on Amazon Linux 2022 can also be provided through your designated AWS representative.
+
+If you just have questions about Amazon Linux 2022, you can start or join a [discussion](https://github.com/amazonlinux/amazon-linux-2022/discussions). Feedback on Amazon Linux 2022 can also be provided through your designated AWS representative or [AWS re:Post](https://repost.aws/).
 
 
 ## Architectures
