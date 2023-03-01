@@ -1,89 +1,88 @@
-# Amazon Linux 2022 - Release Candidate
+# Amazon Linux 2023 - Release Candidate
 
-**Welcome to Amazon Linux 2022!**
+**Welcome to Amazon Linux 2023!**
 
-[Amazon Linux 2022](https://aws.amazon.com/linux/amazon-linux-2022) is the next generation of Amazon Linux from [Amazon Web Services](https://aws.amazon.com/) (AWS). It provides a stable, and high-performance execution environment to develop and run cloud applications. With Amazon Linux 2022 (AL2022), you get an application environment that offers long term support with access to the latest innovations in Linux. Using Fedora as the upstream, AL2022 is a stable distribution that has gone through extensive testing to offer package stability and is maintained and managed with all necessary security updates. Amazon Linux 2022 is provided at no additional charge.
+[Amazon Linux 2023](https://aws.amazon.com/linux/amazon-linux-2023) is the next generation of Amazon Linux from [Amazon Web Services](https://aws.amazon.com/) (AWS). It provides a stable, and high-performance execution environment to develop and run cloud applications. With Amazon Linux 2023 (AL2023), you get an application environment that offers long term support with access to the latest innovations in Linux. Using Fedora as the upstream, AL2023 is a stable distribution that has gone through extensive testing to offer package stability and is maintained and managed with all necessary security updates. Amazon Linux 2023 is provided at no additional charge.
 
-The first Release Candidate of AL2022 is now available for testing. A release candidate is a GA-like distribution (the feature set is frozen, and no major changes are expected between the Release Candidate and the Generally Available version) that will only receive patches and bug fixes leading to the AL2022 Generally Available release, with very few other changes. A Release Candidate AL2022 AMI will contain a date equal to or later than **20220728** within its name. For example, al2022-ami-2022.0.*20220728*.0-kernel-5.15-x86_64 is a Release Candidate AMI, while al2022-ami-2022.0.*20220419*.0-kernel-5.15-x86_64 is not.
+The first Release Candidate of AL2023 is now available for testing. A release candidate is a GA-like distribution (the feature set is frozen, and no major changes are expected between the Release Candidate and the Generally Available version) that will only receive patches and bug fixes leading to the AL2023 Generally Available release, with very few other changes. A Release Candidate AL2023 AMI will contain a date equal to or later than **20230223** within its name. For example, al2023-ami-2023.0.*20230222*.1-kernel-6.1-x86_64 is a Release Candidate AMI, while al2022-ami-2022.0.*20220419*.0-kernel-5.15-x86_64 is not.
 
-**The Release Candidate is not recommended for production workloads and is intended only for testing purposes and to help you prepare for migration to Amazon Linux 2022**.
+**The Release Candidate is not recommended for production workloads and is intended only for testing purposes and to help you prepare for migration to Amazon Linux 2023**.
 
 **Quick links**
-- [Learn how to get started with Amazon Linux 2022](https://github.com/amazonlinux/amazon-linux-2022#how-to-get-started)
-- [Review Amazon Linux 2022 documentation](https://docs.aws.amazon.com/linux/al2022/ug/)
-- [Review Amazon Linux 2022 FAQs](https://aws.amazon.com/linux/amazon-linux-2022/faqs/)
-- [Look at our roadmap to learn of the upcoming features](https://github.com/amazonlinux/amazon-linux-2022/projects/1)
-- [Review Release Notes](https://github.com/amazonlinux/amazon-linux-2022/blob/main/Release%20Notes.md) for the AL2022 Preview AMIs
-- [Review Release Notes](https://github.com/amazonlinux/amazon-linux-2022/blob/main/Release-Notes-Amazon-Linux-2022.0.20220728.0.md) for the AL2022 Release Candidate 0 Released on 2022-07-28
-- [Review Release Notes](https://github.com/amazonlinux/amazon-linux-2022/blob/main/Release-Notes-Amazon-Linux-2022.0.2022.831.md) for the AL2022 Release Candidate 1 Released on 2022-08-31
+- [Learn how to get started with Amazon Linux 2023](https://github.com/amazonlinux/amazon-linux-2023#how-to-get-started)
+- [Review Amazon Linux 2023 documentation](https://docs.aws.amazon.com/linux/al2023/ug/)
+- [Review Amazon Linux 2023 FAQs](https://aws.amazon.com/linux/amazon-linux-2023/faqs/)
+- [Look at our roadmap to learn of the upcoming features](https://github.com/amazonlinux/amazon-linux-2023/projects/1)
+- [Review Release Notes](https://github.com/amazonlinux/amazon-linux-2023/blob/main/Release%20Notes.md) for the AL2023 Preview AMIs
+- [Review Release Notes](https://github.com/amazonlinux/amazon-linux-2023/blob/main/Release-Notes-Amazon-Linux-2023.0.2023.0222.0.md) for the AL2023 Release Candidate 0 Released on 2023-02-22
 
 
 ## Contact Us
-If you find a security issue, [contact our security team](https://github.com/amazonlinux/amazon-linux-2022/security/policy) rather than opening an issue.
+If you find a security issue, [contact our security team](https://github.com/amazonlinux/amazon-linux-2023/security/policy) rather than opening an issue.
 
-We use GitHub issues to gather feedback about Amazon Linux 2022 and to track bug reports and feature requests. You can look at [existing issues](https://github.com/amazonlinux/amazon-linux-2022/issues) to see whether your concern is already known. If it is not, you can open a [new issue](https://github.com/amazonlinux/amazon-linux-2022/issues/new/choose).
+We use GitHub issues to gather feedback about Amazon Linux 2023 and to track bug reports and feature requests. You can look at [existing issues](https://github.com/amazonlinux/amazon-linux-2023/issues) to see whether your concern is already known. If it is not, you can open a [new issue](https://github.com/amazonlinux/amazon-linux-2023/issues/new/choose).
 
 
-If you just have questions about Amazon Linux 2022, you can start or join a [discussion](https://github.com/amazonlinux/amazon-linux-2022/discussions). Feedback on Amazon Linux 2022 can also be provided through your designated AWS representative or [AWS re:Post](https://repost.aws/).
+If you just have questions about Amazon Linux 2023, you can start or join a [discussion](https://github.com/amazonlinux/amazon-linux-2023/discussions). Feedback on Amazon Linux 2023 can also be provided through your designated AWS representative or [AWS re:Post](https://repost.aws/).
 
 
 ## Architectures
-Our supported architectures include *x86_64* and *aarch64* (written as arm64 in some contexts). Amazon Linux 2022 does not ship any i686 packages for runtime compatibility with 32bit x86 code.
+Our supported architectures include *x86_64* and *aarch64* (written as arm64 in some contexts). Amazon Linux 2023 does not ship any i686 packages for runtime compatibility with 32bit x86 code.
 
-Note: Amazon Linux 2022 *does not* support A1 instances. Only instances based on Graviton2 and later generation processors are supported.
+Note: Amazon Linux 2023 *does not* support A1 instances. Only instances based on Graviton2 and later generation processors are supported.
 
 ## Upcoming changes
-The first Release Candidate of AL2022 is now available for testing. Now is the ideal time to validate your services and solutions on AL2022. We are actively seeking your feedback about what to add to and modify in Amazon Linux 2022. We also have a clear [roadmap](https://github.com/amazonlinux/amazon-linux-2022/projects/1) moving forward. If you would like to request a feature, let us know by submitting a [request](https://github.com/amazonlinux/amazon-linux-2022/issues/new/choose).
+The first Release Candidate of AL2023 is now available for testing. Now is the ideal time to validate your services and solutions on AL2023. We are actively seeking your feedback about what to add to and modify in Amazon Linux 2023. We also have a clear [roadmap](https://github.com/amazonlinux/amazon-linux-2023/projects/1) moving forward. If you would like to request a feature, let us know by submitting a [request](https://github.com/amazonlinux/amazon-linux-2023/issues/new/choose).
 
 
 
 
-## Benefits of Amazon Linux 2022
+## Benefits of Amazon Linux 2023
 
 **Optimized for AWS:**
-Amazon Linux 2022 is optimized for Amazon EC2, comes well integrated with latest AWS features, and offers an integrated experience with many of AWS-specific tools.
+Amazon Linux 2023 is optimized for Amazon EC2, comes well integrated with latest AWS features, and offers an integrated experience with many of AWS-specific tools.
 
 **Flexible and consistent update experience:**
-Based on Fedora, AL2022 provides frequent and flexible quarterly updates. AL2022 also locks to a specific version of the Amazon Linux package repository, giving you control over how and when you absorb updates.
+Based on Fedora, AL2023 provides frequent and flexible quarterly updates. AL2023 also locks to a specific version of the Amazon Linux package repository, giving you control over how and when you absorb updates.
 
 **Easy to plan and manage operating system lifecycle:**
-New Amazon Linux major versions will be available every two years and each major version, including AL2022, will come with five years of long term support. 
+New Amazon Linux major versions will be available every two years and each major version, including AL2023, will come with five years of long term support. 
 
 **High security standard:**
-Major applications within AL2022 come with pre-configured SELinux policies to help you meet your compliance needs. AL2022 also allows you to set security policies at boot time.
+Major applications within AL2023 come with pre-configured SELinux policies to help you meet your compliance needs. AL2023 also allows you to set security policies at boot time.
 
-## Notable features of Amazon Linux 2022
+## Notable features of Amazon Linux 2023
 **Predictable two-year major release cycle and long-term support:**
-Starting with AL2022, a new major version of Amazon Linux releases every two years and comes with five years of long-term support, with each release consisting of standard support (2 years), and maintenance (3 years). This support commitment gives customers the stability they need to manage long project lifecycles.
+Starting with AL2023, a new major version of Amazon Linux releases every two years and comes with five years of long-term support, with each release consisting of standard support (2 years), and maintenance (3 years). This support commitment gives customers the stability they need to manage long project lifecycles.
 
 **Frequent and flexible updates:**
 During the standard support phase (2 years), the release receives quarterly minor version updates to provide customers with security updates, bug fixes, and new features. Based on Fedora, this also gives customers access to a wide variety of modern software packages.
 
 **Improved security posture:**
-AL2022 includes pre-configured security policies that make it easy for customers to implement common industry guidelines. These policies can be configured at launch time or run time, including setting the system crypto policy to FUTURE or LEGACY, locking down SELinux, and setting SELinux to enforcing or permissive mode.
+AL2023 includes pre-configured security policies that make it easy for customers to implement common industry guidelines. These policies can be configured at launch time or run time, including setting the system crypto policy to FUTURE or LEGACY, locking down SELinux, and setting SELinux to enforcing or permissive mode.
 
 **Repository locking:**
-Amazon Linux 2022 gives customers control over how and when they choose updates and provides the ability to lock major and minor versions as well as specific versions of your Amazon Linux repository. This enables you to ensure consistency of package versions and updates across your environment.
+Amazon Linux 2023 gives customers control over how and when they choose updates and provides the ability to lock major and minor versions as well as specific versions of your Amazon Linux repository. This enables you to ensure consistency of package versions and updates across your environment.
 
 **Kernel hardening:**
 Many hardening features are enabled by default. This includes secure-boot related features such as kernel module signing, and making the kernel lockdown feature available.
 
 **Kernel Live Patching:**
-Amazon Linux 2022 includes kernel live patching functionality. This enables you to patch critical and important security vulnerabilities in the Linux kernel without reboot or downtime. [Not available until AL2022 GA]
+Amazon Linux 2023 includes kernel live patching functionality. This enables you to patch critical and important security vulnerabilities in the Linux kernel without reboot or downtime. [Not available until AL2023 GA]
 
 ## How to get started
-### Launching Amazon Linux 2022 via EC2 Management Console
-To launch an Amazon Linux 2022 instance from the EC2 Management Console, navigate to **EC2 Dashboard —> Images —> AMIs**, then select **Public images**, and use the search term "al2022-ami". Make sure that *amazon* is listed in the Owner alias column. Select the image from the list, click on the **Launch instance from image** button and follow the instructions.
+### Launching Amazon Linux 2023 via EC2 Management Console
+To launch an Amazon Linux 2023 instance from the EC2 Management Console, navigate to **EC2 Dashboard —> Images —> AMIs**, then select **Public images**, and use the search term "al2023-ami". Make sure that *amazon* is listed in the Owner alias column. Select the image from the list, click on the **Launch instance from image** button and follow the instructions.
 
 
-### Launching latest Amazon Linux 2022 AMI via CloudFormation
-To launch the latest Amazon Linux 2022 AMI using CloudFormation, you can use the following template:
+### Launching latest Amazon Linux 2023 AMI via CloudFormation
+To launch the latest Amazon Linux 2023 AMI using CloudFormation, you can use the following template:
 
 ```# Use public Systems Manager Parameter
 Parameters:
   LatestAmiId:
     Type: 'AWS::SSM::Parameter::Value<AWS::EC2::Image::Id>'
-    Default: '/aws/service/ami-amazon-linux-latest/al2022-ami-kernel-5.15-arm64'
+    Default: '/aws/service/ami-amazon-linux-latest/al2023-ami-kernel-6.1-arm64'
 
 Resources:
  Instance:
@@ -93,13 +92,13 @@ Resources:
 ```
 
 Make sure to replace the AMI alias section if needed. The following aliases are available:
-- *al2022-ami-kernel-5.15-arm64* for arm64 architecture
-- *al2022-ami-minimal-kernel-5.15-arm64* for arm64 architecture (minimal AMI)
-- *al2022-ami-kernel-5.15-x86_64* for x86_64 architecture
-- *al2022-ami-minimal-kernel-5.15-x86_64* for x86_64 architecture (minimal AMI)
+- *al2023-ami-kernel-6.1-arm64* for arm64 architecture
+- *al2023-ami-minimal-kernel-6.1-arm64* for arm64 architecture (minimal AMI)
+- *al2023-ami-kernel-6.1-x86_64* for x86_64 architecture
+- *al2023-ami-minimal-kernel-6.1-x86_64* for x86_64 architecture (minimal AMI)
 
-### Launching Amazon Linux 2022 using specific AMI ID
-You can launch specific Amazon Linux 2022 AMI using its AMI ID. You can determine the needed Amazon Linux 2022 AMI ID by looking at the AMI list in the EC2 Management Console or by using SSM. If you are using SSM, please refer to this [article](https://aws.amazon.com/blogs/compute/query-for-the-latest-amazon-linux-ami-ids-using-aws-systems-manager-parameter-store/) for details and make sure to indicate the AMI aliases from the section above.
+### Launching Amazon Linux 2023 using specific AMI ID
+You can launch specific Amazon Linux 2023 AMI using its AMI ID. You can determine the needed Amazon Linux 2023 AMI ID by looking at the AMI list in the EC2 Management Console or by using SSM. If you are using SSM, please refer to this [article](https://aws.amazon.com/blogs/compute/query-for-the-latest-amazon-linux-ami-ids-using-aws-systems-manager-parameter-store/) for details and make sure to indicate the AMI aliases from the section above.
 
 ### Using the Amazon Linux container image<a name="install-docker"></a>
 
@@ -127,16 +126,16 @@ The get\-login\-password command is supported using the latest version of AWS CL
 
 1. Pull the Amazon Linux container image using the docker pull command\. To view the Amazon Linux container image on the Amazon ECR Public Gallery, see [Amazon ECR Public Gallery \- amazonlinux](https://gallery.ecr.aws/amazonlinux/amazonlinux)\.
 **Note**  
-To get the latest version of the container image of Amazon Linux 2022, use the tag :2022\. To get a specific version of the container image, you need to use the tag listed in the [Amazon ECR Public Gallery \-amazonlinux](https://gallery.ecr.aws/amazonlinux/amazonlinux), for example :2022\.0\.20211222\.0\. The following examples use the tag :2022 and pull the most recent available container image of Amazon Linux 2022\.
+To get the latest version of the container image of Amazon Linux 2023, use the tag :2023\. To get a specific version of the container image, you need to use the tag listed in the [Amazon ECR Public Gallery \-amazonlinux](https://gallery.ecr.aws/amazonlinux/amazonlinux), for example :2023\.0\.20211222\.0\. The following examples use the tag :2023 and pull the most recent available container image of Amazon Linux 2023\.
 
    ```
-   # docker pull public.ecr.aws/amazonlinux/amazonlinux:2022
+   # docker pull public.ecr.aws/amazonlinux/amazonlinux:2023
    ```
 
 1. \(Optional\) Run the container locally\.
 
    ```
-   # docker run -it public.ecr.aws/amazonlinux/amazonlinux:2022 /bin/bash
+   # docker run -it public.ecr.aws/amazonlinux/amazonlinux:2023 /bin/bash
    ```
    **Note**
    If *seccomp* is enabled, you might get an *EPERM* error when using Amazon Linux container images\. To run a container without the default *seccomp* profile, add the following option to the docker command\.
@@ -148,7 +147,7 @@ To get the latest version of the container image of Amazon Linux 2022, use the t
    This is the updated command\.
 
    ```
-   docker run -it --security-opt seccomp=unconfined public.ecr.aws/amazonlinux/amazonlinux:2022 /bin/bash
+   docker run -it --security-opt seccomp=unconfined public.ecr.aws/amazonlinux/amazonlinux:2023 /bin/bash
    ```
 
 **To pull the Amazon Linux container image from Docker Hub**
@@ -156,11 +155,11 @@ To get the latest version of the container image of Amazon Linux 2022, use the t
 1. Pull the Amazon Linux container image using the docker pull command\.
 
    ```
-   # docker pull amazonlinux:2022
+   # docker pull amazonlinux:2023
    ```
 
 1. \(Optional\) Run the container locally\.
 
    ```
-   # docker run -it amazonlinux:2022 /bin/bash
+   # docker run -it amazonlinux:2023 /bin/bash
    ```
