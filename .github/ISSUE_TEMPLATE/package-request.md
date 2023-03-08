@@ -11,7 +11,6 @@ assignees: ''
 
 **Is this an update to existing package or new package request?**
 
-**Is this package available in Amazon Linux 2?**
-A clear and concise description of what you want to happen.
+**Is this package available in Amazon Linux 2? If it is available via external sources such as EPEL, please specify.**
 
-**Number of users impacted**
+**Any additional information you'd like to include. (use-cases, etc)**
