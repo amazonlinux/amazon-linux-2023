@@ -112,7 +112,6 @@
 
   <xs:complexType name="Package">
     <xs:attribute name="name" type="xs:string"/>
-    <xs:attribute name="nevra" type="xs:string"/>
     <xs:attribute name="note" type="xs:string"/>
   </xs:complexType>
 
