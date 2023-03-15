@@ -1,26 +1,24 @@
-## Amazon Linux 2022 Support Statements
+## Amazon Linux 2023 Support Statements
 
-Just want to see the support statements? Head to https://amazonlinux.github.io/amazon-linux-2022/al2022-support-statements/
+Just want to see the support statements? Head to https://docs.aws.amazon.com/linux/al2023/release-notes/support-info-by-support-statement.html
 
-This repository contains information as to the Maintenance Support period of Amazon Linux 2022.
+This repository contains information as to the Maintenance Support period of Amazon Linux 2023.
 
 The information is available in a number of formats. There is the machine readable `support_info.xml`, which is of the `support_info.xsd` schema. For humans, there is XSLT to have a by package and by support statement ordered output.
 
-In Amazon Linux 2022, you can see specific support status and dates of individual packages using the `dnf-plugin-support-info` plugin. You can even get information on all currently installed packages or apply filters based on "supported" or "unsupported" packages. 
+In Amazon Linux 2023, you can see specific support status and dates of individual packages using the `dnf-plugin-support-info` plugin. You can even get information on all currently installed packages or apply filters based on "supported" or "unsupported" packages.
 
 DNF Plugin source is available here: https://github.com/amazonlinux/dnf-plugin-support-info.
 
 
 ## DNF SupportInfo Pugin
 
-Amazon Linux provides updates for all packages and maintains compatibility within a major version for customer applications that are built on Amazon Linux. Core packages, such as glibc, openssl, openssh, and the dnf package manager, receive support for the lifetime of the major Amazon Linux 2022 release. Packages that aren't part of the core packages receive support defined by their upstream sources.
+Amazon Linux provides updates for all packages and maintains compatibility within a major version for customer applications that are built on Amazon Linux. Core packages, such as glibc, openssl, openssh, and the dnf package manager, receive support for the lifetime of the major Amazon Linux 2023 release. Packages that aren't part of the core packages receive support defined by their upstream sources.
 
-The full list of core packages will be ﬁnalized during the preview. If you want to see more packages included as core packages, tell us. We will evaluate as we are collecting feedback. Feedback on Amazon Linux 2022 can be provided through your designated AWS representative or [Amazon Linux Discussion Forums](https://forums.aws.amazon.com/forum.jspa?forumID=228).
+The full list of core packages will be ﬁnalized during the preview. If you want to see more packages included as core packages, tell us. We will evaluate as we are collecting feedback. Feedback on Amazon Linux 2023 can be provided through your designated AWS representative or [Amazon Linux Discussion Forums](https://forums.aws.amazon.com/forum.jspa?forumID=228).
 
 
 ### Plugin Usage:
-
-#### Note: Support periods mentioned below are EXAMPLES for the AL2022 Tech Preview, and are subject to change at GA.
 
 
 ```
@@ -39,18 +37,18 @@ Supportinfo command-specific options:
 
 ```
 
-$ dnf supportinfo --pkg php
+$ dnf supportinfo --pkg php8.1
 
-Name                 : php
-Version              : php-0:7.4.19-1.amzn2022.0.1.x86_64
+Name                 : php8.1
+Version              : 8.1.14-1.amzn2023.0.2
 State                : available
 Support Status       : supported
-Support Periods      : from 2021-11-02      : supported
-                     : from 2022-11-28      : unsupported
-Support Statement    : Example: PHP 7.4 has security support until November 2022
+Support Periods      : from 2023-03-15      : supported
+                     : from 2025-11-24      : unsupported
+Support Statement    : PHP 8.1 has security support until November 2025
 Link                 : https://www.php.net/supported-versions
-Other Info           : Example support period for PHP 7.4 differs from the main distribution End of Life date.
-Package Note         : Upstream end of life for PHP 7.4 (php) is 2022-11-28
+Other Info           : Support period for PHP 8.1 differs from the main distribution end-of-life date.
+Package Note         : Upstream end-of-life for PHP 8.1 (php8.1) is 2025-11-24
 
 ```
 
@@ -59,17 +57,16 @@ Package Note         : Upstream end of life for PHP 7.4 (php) is 2022-11-28
 $ dnf supportinfo --pkg glibc
 
 Name                 : glibc
-Version              : glibc-0:2.34-7.amzn2022.x86_64
+Version              : 2.34-52.amzn2023.0.2
 State                : installed
 Support Status       : supported
-Support Periods      : from 2022-06-30      : supported
-                     : from 2027-06-30      : unsupported
-Support Statement    : Amazon Linux 2022 End Of Life
+Support Periods      : from 2023-03-15      : supported
+                     : from 2028-03-15      : unsupported
+Support Statement    : Amazon Linux 2023 end-of-life
 Link                 : https://aws.amazon.com/amazon-linux-ami/faqs/
-Other Info           : This is an Example Support Statement for the AL2022 Tech Preview. In this example, the end of
-                     : life of Amazon Linux 2022 would be June 2027.From this point, the Amazon Linux 2022 packages
-                     : (listed below) will no longer, receive any updates from AWS. This support period is an EXAMPLE
-                     : ONLY, and may differ at GA date.
+Other Info           : This is the support statement for AL2023. The end-of-life of Amazon Linux 2023 is
+                     : March 2028. From this point, the Amazon Linux 2023 packages will no longer receive
+                     : any updates from AWS.
 
 ```
 
@@ -77,17 +74,17 @@ Other Info           : This is an Example Support Statement for the AL2022 Tech 
 
 ```plain
 
-$ dnf supportinfo --pkg php --showxml
+$ dnf supportinfo --pkg php8.1 --showxml
 
 <?xml version="1.0" ?>
-<package_support current_as="2021-11-15">
+<package_support current_as="2023-03-15">
   <statements>
-    <statement id="eol_php" marker="supported" start_date="2021-11-02" end_date="2022-11-28">
-      <summary>Example: PHP 7.4 has security support until November 2022</summary>
-      <text>Example support period for PHP 7.4 differs from the main distribution End of Life date.</text>
+    <statement id="eol_php8.1" marker="supported" start_date="2023-03-15" end_date="2025-11-24">
+      <summary>PHP 8.1 has security support until November 2025</summary>
+      <text>Support period for PHP 8.1 differs from the main distribution end-of-life date.</text>
       <link>https://www.php.net/supported-versions</link>
       <packages>
-        <package name="php" nevra="php-0:7.4.19-1.amzn2022.0.1.x86_64"/>
+        <package name="php8.1" nevra="8.1.14-1.amzn2023.0.2"/>
       </packages>
     </statement>
   </statements>
@@ -103,21 +100,37 @@ $ dnf supportinfo --pkg php --showxml
 
 $ dnf supportinfo --show installed
 
-acl                                        2.3.1-2.amzn2022                     installed          supported          2027-06-30         Amazon Linux 2022 End Of Life
-alternatives                               1.15-2.amzn2022                      installed          supported          2027-06-30         Amazon Linux 2022 End Of Life
-amazon-ec2-net-utils                       2.0.0-1.amzn2022                     installed          supported          2027-06-30         Amazon Linux 2022 End Of Life
+acl                                        2.3.1-2.amzn2023.0.2                 installed          supported          2028-03-15         Amazon Linux 2023 end-of-life
+acpid                                      2.0.32-4.amzn2023.0.2                installed          supported          2028-03-15         Amazon Linux 2023 end-of-life
+alternatives                               1.15-2.amzn2023.0.2                  installed          supported          2028-03-15         Amazon Linux 2023 end-of-life
+amazon-ec2-net-utils                       2.3.0-1.amzn2023.0.2                 installed          supported          2028-03-15         Amazon Linux 2023 end-of-life
+amazon-linux-repo-s3                       2023.0.20230315-1.amzn2023           installed          supported          2028-03-15         Amazon Linux 2023 end-of-life
+amazon-rpm-config                          228-3.amzn2023.0.2                   installed          supported          2028-03-15         Amazon Linux 2023 end-of-life
+amazon-ssm-agent                           3.1.1927.0-1.amzn2023                installed          supported          2028-03-15         Amazon Linux 2023 end-of-life
+
 ...
 ...
-libsolv                                    0.7.17-3.amzn2022                    installed          supported          2027-06-30         Amazon Linux 2022 End Of Life
-libss                                      1.45.6-5.amzn2022                    installed          supported          2027-06-30         Amazon Linux 2022 End Of Life
-libssh                                     0.9.6-1.amzn2022                     installed          supported          2027-06-30         Amazon Linux 2022 End Of Life
-libssh-config                              0.9.6-1.amzn2022                     installed          supported          2027-06-30         Amazon Linux 2022 End Of Life
-libstdc++                                  11.2.1-2.amzn2022.0.2                installed          supported          2027-06-30         Amazon Linux 2022 End Of Life
-libtalloc                                  2.3.3-2.amzn2022                     installed          supported          2027-06-30         Amazon Linux 2022 End Of Life
-libtasn1                                   4.16.0-4.amzn2022                    installed          supported          2027-06-30         Amazon Linux 2022 End Of Life
+...
+
+ghc-srpm-macros                            1.5.0-4.amzn2023.0.2                 installed          supported          2028-03-15         Amazon Linux 2023 end-of-life
+glib2                                      2.73.2-680.amzn2023.0.3              installed          supported          2028-03-15         Amazon Linux 2023 end-of-life
+glibc                                      2.34-52.amzn2023.0.2                 installed          supported          2028-03-15         Amazon Linux 2023 end-of-life
+glibc-all-langpacks                        2.34-52.amzn2023.0.2                 installed          supported          2028-03-15         Amazon Linux 2023 end-of-life
+glibc-common                               2.34-52.amzn2023.0.2                 installed          supported          2028-03-15         Amazon Linux 2023 end-of-life
+glibc-gconv-extra                          2.34-52.amzn2023.0.2                 installed          supported          2028-03-15         Amazon Linux 2023 end-of-life
+glibc-locale-source                        2.34-52.amzn2023.0.2                 installed          supported          2028-03-15         Amazon Linux 2023 end-of-life
+gmp                                        6.2.1-2.amzn2023.0.2                 installed          supported          2028-03-15         Amazon Linux 2023 end-of-life
+gnupg2-minimal                             2.3.7-1.amzn2023.0.3                 installed          supported          2028-03-15         Amazon Linux 2023 end-of-life
+gnutls                                     3.7.8-359.amzn2023.0.3               installed          supported          2028-03-15         Amazon Linux 2023 end-of-life
+go-srpm-macros                             3.1.0-32.amzn2023.0.2                installed          supported          2028-03-15         Amazon Linux 2023 end-of-life
+
 ...
 ...
-zstd                                       1.5.0-1.amzn2022                     installed          supported          2027-06-30         Amazon Linux 2022 End Of Life
+...
+
+zip                                        3.0-28.amzn2023.0.2                  installed          supported          2028-03-15         Amazon Linux 2023 end-of-life
+zlib                                       1.2.11-33.amzn2023.0.4               installed          supported          2028-03-15         Amazon Linux 2023 end-of-life
+zstd                                       1.5.2-1.amzn2023.0.2                 installed          supported          2028-03-15         Amazon Linux 2023 end-of-life
 
 ```
 
