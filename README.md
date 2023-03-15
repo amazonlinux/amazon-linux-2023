@@ -1,12 +1,10 @@
-# Amazon Linux 2023 - Release Candidate
+# Amazon Linux 2023
 
 **Welcome to Amazon Linux 2023!**
 
 [Amazon Linux 2023](https://aws.amazon.com/linux/amazon-linux-2023) is the next generation of Amazon Linux from [Amazon Web Services](https://aws.amazon.com/) (AWS). It provides a stable, and high-performance execution environment to develop and run cloud applications. With Amazon Linux 2023 (AL2023), you get an application environment that offers long term support with access to the latest innovations in Linux. Using Fedora as the upstream, AL2023 is a stable distribution that has gone through extensive testing to offer package stability and is maintained and managed with all necessary security updates. Amazon Linux 2023 is provided at no additional charge.
 
-The first Release Candidate of AL2023 is now available for testing. A release candidate is a GA-like distribution (the feature set is frozen, and no major changes are expected between the Release Candidate and the Generally Available version) that will only receive patches and bug fixes leading to the AL2023 Generally Available release, with very few other changes. A Release Candidate AL2023 AMI will contain a date equal to or later than **20230223** within its name. For example, al2023-ami-2023.0.*20230222*.1-kernel-6.1-x86_64 is a Release Candidate AMI, while al2022-ami-2022.0.*20220419*.0-kernel-5.15-x86_64 is not.
-
-**The Release Candidate is not recommended for production workloads and is intended only for testing purposes and to help you prepare for migration to Amazon Linux 2023**.
+Amazon Linux 2023 was released to general availability in all AWS regions on March 15, 2023.
 
 **Quick links**
 - [Learn how to get started with Amazon Linux 2023](https://github.com/amazonlinux/amazon-linux-2023#how-to-get-started)
@@ -15,6 +13,7 @@ The first Release Candidate of AL2023 is now available for testing. A release ca
 - [Look at our roadmap to learn of the upcoming features](https://github.com/amazonlinux/amazon-linux-2023/projects/1)
 - [Review Release Notes](https://github.com/amazonlinux/amazon-linux-2023/blob/main/Release%20Notes.md) for the AL2023 Preview AMIs
 - [Review Release Notes](https://github.com/amazonlinux/amazon-linux-2023/blob/main/Release-Notes-Amazon-Linux-2023.0.2023.0222.0.md) for the AL2023 Release Candidate 0 Released on 2023-02-22
+- [Review Release Notes](https://github.com/amazonlinux/amazon-linux-2023/blob/main/Release-Notes-Amazon-Linux-2023.0.2023.0315.0.md) for the AL2023 GA release
 
 
 ## Contact Us
@@ -30,10 +29,6 @@ If you just have questions about Amazon Linux 2023, you can start or join a [dis
 Our supported architectures include *x86_64* and *aarch64* (written as arm64 in some contexts). Amazon Linux 2023 does not ship any i686 packages for runtime compatibility with 32bit x86 code.
 
 Note: Amazon Linux 2023 *does not* support A1 instances. Only instances based on Graviton2 and later generation processors are supported.
-
-## Upcoming changes
-The first Release Candidate of AL2023 is now available for testing. Now is the ideal time to validate your services and solutions on AL2023. We are actively seeking your feedback about what to add to and modify in Amazon Linux 2023. We also have a clear [roadmap](https://github.com/amazonlinux/amazon-linux-2023/projects/1) moving forward. If you would like to request a feature, let us know by submitting a [request](https://github.com/amazonlinux/amazon-linux-2023/issues/new/choose).
-
 
 
 
