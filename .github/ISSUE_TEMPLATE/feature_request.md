@@ -1,6 +1,6 @@
 ---
 name: Feature request
-about: Request a feature for Amazon Linux 2022
+about: Request a feature for Amazon Linux 2023
 title: "[Feature Request] - Title"
 labels: ''
 assignees: ''
