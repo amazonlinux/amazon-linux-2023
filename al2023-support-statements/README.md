@@ -15,8 +15,6 @@ DNF Plugin source is available here: https://github.com/amazonlinux/dnf-plugin-s
 
 Amazon Linux provides updates for all packages and maintains compatibility within a major version for customer applications that are built on Amazon Linux. Core packages, such as glibc, openssl, openssh, and the dnf package manager, receive support for the lifetime of the major Amazon Linux 2023 release. Packages that aren't part of the core packages receive support defined by their upstream sources.
 
-The full list of core packages will be ﬁnalized during the preview. If you want to see more packages included as core packages, tell us. We will evaluate as we are collecting feedback. Feedback on Amazon Linux 2023 can be provided through your designated AWS representative or [Amazon Linux Discussion Forums](https://forums.aws.amazon.com/forum.jspa?forumID=228).
-
 
 ### Plugin Usage:
 
