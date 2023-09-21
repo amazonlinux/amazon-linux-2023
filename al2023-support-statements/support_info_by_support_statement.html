@@ -5,18 +5,28 @@
 </head>
 <body>
 <h1>Package Support Status</h1>
-<p>This is current as of 2023-03-03T21:49:55.797026</p>
+<p>This is current as of 2023-09-01T15:42:52.148382</p>
 <ul>
+<li>
+<a href="#eol_java-1.8.0-amazon-corretto">Amazon Corretto 8 has security support until June 2026</a> (supported)</li>
+<li>
+<a href="#eol_java-11-amazon-corretto">Amazon Corretto 11 has security support until September 2027</a> (supported)</li>
+<li>
+<a href="#eol_java-17-amazon-corretto">Amazon Corretto 17 has security support until March 2028</a> (supported)</li>
 <li>
 <a href="#eol_mariadb105">MariaDB 10.5 has security support until June 2025</a> (supported)</li>
 <li>
 <a href="#eol_nginx">NGINX has security support until March 2028</a> (supported)</li>
 <li>
-<a href="#eol_php8.1">PHP 8.1 has security support until November 2025</a> (supported)</li>
+<a href="#eol_php8.1">PHP 8.1 has security support until November 2024</a> (supported)</li>
+<li>
+<a href="#eol_php8.2">PHP 8.2 has security support until December 2025</a> (supported)</li>
 <li>
 <a href="#eol_postgresql15">PostgreSQL 15 has security support until November 2027</a> (supported)</li>
 <li>
 <a href="#eol_python3">Python 3.9 (System Python) has security support until March 2028</a> (supported)</li>
+<li>
+<a href="#eol_python3.11">Python 3.11 has security support until October 2027</a> (supported)</li>
 <li>
 <a href="#eol_redis6">Redis 6 has security support until August 2025</a> (supported)</li>
 <li>
@@ -26,8 +36,116 @@
 <li>
 <a href="#eol_dotnet">Dotnet6.0 has security support until November 2024</a> (supported)</li>
 <li>
+<a href="#eol_kernel">Kernel has security support until March 2028</a> (supported)</li>
+<li>
 <a href="#eol">Amazon Linux 2023 end-of-life</a> (supported)</li>
 </ul>
+<h2><a name="eol_java-1.8.0-amazon-corretto">Amazon Corretto 8 has security support until June 2026</a></h2>
+<p><a href="https://aws.amazon.com/corretto/">https://aws.amazon.com/corretto/</a></p>
+<p>The last planned update of Amazon Corretto 8 is in April 2026, with an End of Life in July 2026.</p>
+<h3>Package List</h3>
+<table cellspacing="0">
+<tr>
+<th>Package</th>
+<th>Note</th>
+</tr>
+<tr class="supported">
+<td>java-1.8.0-amazon-corretto</td>
+<td>Upstream end-of-life for Amazon Corretto 8 (java-1.8.0-amazon-corretto) is 2026-06-30</td>
+</tr>
+<tr class="supported">
+<td>java-1.8.0-amazon-corretto-devel</td>
+<td>Upstream end-of-life for Amazon Corretto 8 (java-1.8.0-amazon-corretto) is 2026-06-30</td>
+</tr>
+<tr class="supported">
+<td>R-java-devel</td>
+<td>This package has a runtime dependency on java-1.8.0-amazon-corretto-devel, and thus also falls under the support statements for java-1.8.0-amazon-corretto. Upstream end-of-life for Amazon Corretto 8 (java-1.8.0-amazon-corretto) is 2026-06-30</td>
+</tr>
+<tr class="supported">
+<td>systemtap-runtime-java</td>
+<td>This package has a runtime dependency on java-1.8.0-amazon-corretto-devel, and thus also falls under the support statements for java-1.8.0-amazon-corretto. Upstream end-of-life for Amazon Corretto 8 (java-1.8.0-amazon-corretto) is 2026-06-30</td>
+</tr>
+</table>
+<h2><a name="eol_java-11-amazon-corretto">Amazon Corretto 11 has security support until September 2027</a></h2>
+<p><a href="https://aws.amazon.com/corretto/">https://aws.amazon.com/corretto/</a></p>
+<p>The last planned update of Amazon Corretto 11 is in July 2027, with an End of Life in October 2027.</p>
+<h3>Package List</h3>
+<table cellspacing="0">
+<tr>
+<th>Package</th>
+<th>Note</th>
+</tr>
+<tr class="supported">
+<td>java-11-amazon-corretto</td>
+<td>Upstream end-of-life for Amazon Corretto 11 (java-11-amazon-corretto) is 2027-09-01</td>
+</tr>
+<tr class="supported">
+<td>java-11-amazon-corretto-devel</td>
+<td>Upstream end-of-life for Amazon Corretto 11 (java-11-amazon-corretto) is 2027-09-01</td>
+</tr>
+<tr class="supported">
+<td>java-11-amazon-corretto-headless</td>
+<td>Upstream end-of-life for Amazon Corretto 11 (java-11-amazon-corretto) is 2027-09-01</td>
+</tr>
+<tr class="supported">
+<td>java-11-amazon-corretto-javadoc</td>
+<td>Upstream end-of-life for Amazon Corretto 11 (java-11-amazon-corretto) is 2027-09-01</td>
+</tr>
+<tr class="supported">
+<td>java-11-amazon-corretto-jmods</td>
+<td>Upstream end-of-life for Amazon Corretto 11 (java-11-amazon-corretto) is 2027-09-01</td>
+</tr>
+<tr class="supported">
+<td>R-java</td>
+<td>This package has a runtime dependency on java-11-amazon-corretto-headless, and thus also falls under the support statements for java-11-amazon-corretto. Upstream end-of-life for Amazon Corretto 11 (java-11-amazon-corretto) is 2027-09-01</td>
+</tr>
+<tr class="supported">
+<td>libwebp-java</td>
+<td>This package has a runtime dependency on java-11-amazon-corretto-headless, and thus also falls under the support statements for java-11-amazon-corretto. Upstream end-of-life for Amazon Corretto 11 (java-11-amazon-corretto) is 2027-09-01</td>
+</tr>
+<tr class="supported">
+<td>openmpi-java</td>
+<td>This package has a runtime dependency on java-11-amazon-corretto-headless, and thus also falls under the support statements for java-11-amazon-corretto. Upstream end-of-life for Amazon Corretto 11 (java-11-amazon-corretto) is 2027-09-01</td>
+</tr>
+<tr class="supported">
+<td>sphinx-java</td>
+<td>This package has a runtime dependency on java-11-amazon-corretto-headless, and thus also falls under the support statements for java-11-amazon-corretto. Upstream end-of-life for Amazon Corretto 11 (java-11-amazon-corretto) is 2027-09-01</td>
+</tr>
+</table>
+<h2><a name="eol_java-17-amazon-corretto">Amazon Corretto 17 has security support until March 2028</a></h2>
+<p><a href="https://aws.amazon.com/corretto/">https://aws.amazon.com/corretto/</a></p>
+<p>The last planned update of Amazon Corretto 17 is in July 2028, with an End of Life in October 2028. Since the Amazon Linux 2023 EoL date is early, it applies for Corretto 17 in AL2023.</p>
+<h3>Package List</h3>
+<table cellspacing="0">
+<tr>
+<th>Package</th>
+<th>Note</th>
+</tr>
+<tr class="supported">
+<td>java-17-amazon-corretto</td>
+<td>Upstream end-of-life for Amazon Corretto 17 (java-17-amazon-corretto) is 2028-03-15</td>
+</tr>
+<tr class="supported">
+<td>java-17-amazon-corretto-devel</td>
+<td>Upstream end-of-life for Amazon Corretto 17 (java-17-amazon-corretto) is 2028-03-15</td>
+</tr>
+<tr class="supported">
+<td>java-17-amazon-corretto-headless</td>
+<td>Upstream end-of-life for Amazon Corretto 17 (java-17-amazon-corretto) is 2028-03-15</td>
+</tr>
+<tr class="supported">
+<td>java-17-amazon-corretto-javadoc</td>
+<td>Upstream end-of-life for Amazon Corretto 17 (java-17-amazon-corretto) is 2028-03-15</td>
+</tr>
+<tr class="supported">
+<td>java-17-amazon-corretto-jmods</td>
+<td>Upstream end-of-life for Amazon Corretto 17 (java-17-amazon-corretto) is 2028-03-15</td>
+</tr>
+<tr class="supported">
+<td>collectd-java</td>
+<td>This package has a runtime dependency on java-17-amazon-corretto-headless, and thus also falls under the support statements for java-17-amazon-corretto. Upstream end-of-life for Amazon Corretto 17 (java-17-amazon-corretto) is 2028-03-15</td>
+</tr>
+</table>
 <h2><a name="eol_mariadb105">MariaDB 10.5 has security support until June 2025</a></h2>
 <p><a href="https://mariadb.com/kb/en/changes-improvements-in-mariadb-105/">https://mariadb.com/kb/en/changes-improvements-in-mariadb-105/</a></p>
 <p>Support period for MariaDB 10.5 differs from the main distribution end-of-life date.</p>
@@ -39,19 +157,67 @@
 </tr>
 <tr class="supported">
 <td>mariadb105</td>
-<td>This package has a runtime dependency on mariadb105, and thus also falls under the support statements for mariadb105. Upstream end-of-life for MariaDB 10.5 (mariadb105) is 2025-06-24</td>
+<td>Upstream end-of-life for MariaDB 10.5 (mariadb105) is 2025-06-24</td>
+</tr>
+<tr class="supported">
+<td>mariadb105-backup</td>
+<td>Upstream end-of-life for MariaDB 10.5 (mariadb105) is 2025-06-24</td>
+</tr>
+<tr class="supported">
+<td>mariadb105-common</td>
+<td>Upstream end-of-life for MariaDB 10.5 (mariadb105) is 2025-06-24</td>
+</tr>
+<tr class="supported">
+<td>mariadb105-connect-engine</td>
+<td>Upstream end-of-life for MariaDB 10.5 (mariadb105) is 2025-06-24</td>
+</tr>
+<tr class="supported">
+<td>mariadb105-cracklib-password-check</td>
+<td>Upstream end-of-life for MariaDB 10.5 (mariadb105) is 2025-06-24</td>
+</tr>
+<tr class="supported">
+<td>mariadb105-devel</td>
+<td>Upstream end-of-life for MariaDB 10.5 (mariadb105) is 2025-06-24</td>
+</tr>
+<tr class="supported">
+<td>mariadb105-errmsg</td>
+<td>Upstream end-of-life for MariaDB 10.5 (mariadb105) is 2025-06-24</td>
+</tr>
+<tr class="supported">
+<td>mariadb105-gssapi-server</td>
+<td>Upstream end-of-life for MariaDB 10.5 (mariadb105) is 2025-06-24</td>
+</tr>
+<tr class="supported">
+<td>mariadb105-oqgraph-engine</td>
+<td>Upstream end-of-life for MariaDB 10.5 (mariadb105) is 2025-06-24</td>
+</tr>
+<tr class="supported">
+<td>mariadb105-pam</td>
+<td>Upstream end-of-life for MariaDB 10.5 (mariadb105) is 2025-06-24</td>
+</tr>
+<tr class="supported">
+<td>mariadb105-rocksdb-engine</td>
+<td>Upstream end-of-life for MariaDB 10.5 (mariadb105) is 2025-06-24</td>
 </tr>
 <tr class="supported">
 <td>mariadb105-server</td>
-<td>This package has a runtime dependency on mariadb105, and thus also falls under the support statements for mariadb105. Upstream end-of-life for MariaDB 10.5 (mariadb105) is 2025-06-24</td>
+<td>Upstream end-of-life for MariaDB 10.5 (mariadb105) is 2025-06-24</td>
+</tr>
+<tr class="supported">
+<td>mariadb105-server-utils</td>
+<td>Upstream end-of-life for MariaDB 10.5 (mariadb105) is 2025-06-24</td>
+</tr>
+<tr class="supported">
+<td>mariadb105-sphinx-engine</td>
+<td>Upstream end-of-life for MariaDB 10.5 (mariadb105) is 2025-06-24</td>
 </tr>
 <tr class="supported">
 <td>mariadb105-test</td>
-<td>This package has a runtime dependency on mariadb105, and thus also falls under the support statements for mariadb105. Upstream end-of-life for MariaDB 10.5 (mariadb105) is 2025-06-24</td>
+<td>Upstream end-of-life for MariaDB 10.5 (mariadb105) is 2025-06-24</td>
 </tr>
 <tr class="supported">
 <td>perl-DBD-MariaDB-tests</td>
-<td>This package has a runtime dependency on mariadb105, and thus also falls under the support statements for mariadb105. Upstream end-of-life for MariaDB 10.5 (mariadb105) is 2025-06-24</td>
+<td>Upstream end-of-life for MariaDB 10.5 (mariadb105) is 2025-06-24</td>
 </tr>
 </table>
 <h2><a name="eol_nginx">NGINX has security support until March 2028</a></h2>
@@ -65,36 +231,52 @@
 </tr>
 <tr class="supported">
 <td>nginx</td>
-<td>This package has a runtime dependency on nginx, and thus also falls under the support statements for nginx. Upstream end-of-life for NGINX (nginx) is 2028-03-15</td>
+<td>Upstream end-of-life for NGINX (nginx) is 2028-03-15</td>
+</tr>
+<tr class="supported">
+<td>nginx-all-modules</td>
+<td>Upstream end-of-life for NGINX (nginx) is 2028-03-15</td>
+</tr>
+<tr class="supported">
+<td>nginx-core</td>
+<td>Upstream end-of-life for NGINX (nginx) is 2028-03-15</td>
+</tr>
+<tr class="supported">
+<td>nginx-filesystem</td>
+<td>Upstream end-of-life for NGINX (nginx) is 2028-03-15</td>
+</tr>
+<tr class="supported">
+<td>nginx-mimetypes</td>
+<td>Upstream end-of-life for NGINX (nginx) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>nginx-mod-devel</td>
-<td>This package has a runtime dependency on nginx, and thus also falls under the support statements for nginx. Upstream end-of-life for NGINX (nginx) is 2028-03-15</td>
+<td>Upstream end-of-life for NGINX (nginx) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>nginx-mod-http-image-filter</td>
-<td>This package has a runtime dependency on nginx, and thus also falls under the support statements for nginx. Upstream end-of-life for NGINX (nginx) is 2028-03-15</td>
+<td>Upstream end-of-life for NGINX (nginx) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>nginx-mod-http-perl</td>
-<td>This package has a runtime dependency on nginx, and thus also falls under the support statements for nginx. Upstream end-of-life for NGINX (nginx) is 2028-03-15</td>
+<td>Upstream end-of-life for NGINX (nginx) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>nginx-mod-http-xslt-filter</td>
-<td>This package has a runtime dependency on nginx, and thus also falls under the support statements for nginx. Upstream end-of-life for NGINX (nginx) is 2028-03-15</td>
+<td>Upstream end-of-life for NGINX (nginx) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>nginx-mod-mail</td>
-<td>This package has a runtime dependency on nginx, and thus also falls under the support statements for nginx. Upstream end-of-life for NGINX (nginx) is 2028-03-15</td>
+<td>Upstream end-of-life for NGINX (nginx) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>nginx-mod-stream</td>
-<td>This package has a runtime dependency on nginx, and thus also falls under the support statements for nginx. Upstream end-of-life for NGINX (nginx) is 2028-03-15</td>
+<td>Upstream end-of-life for NGINX (nginx) is 2028-03-15</td>
 </tr>
 </table>
-<h2><a name="eol_php8.1">PHP 8.1 has security support until November 2025</a></h2>
+<h2><a name="eol_php8.1">PHP 8.1 has security support until November 2024</a></h2>
 <p><a href="https://www.php.net/supported-versions">https://www.php.net/supported-versions</a></p>
-<p>Support period for PHP 8.1 differs from the main distribution end-of-life date.</p>
+<p>Support period for PHP 8.1 is the same as PHP 8.1 upstream end-of-life. PHP 8.2 is available with an upstream end-of-life date of 2025-12-08.</p>
 <h3>Package List</h3>
 <table cellspacing="0">
 <tr>
@@ -103,7 +285,229 @@
 </tr>
 <tr class="supported">
 <td>php8.1</td>
-<td>Upstream end-of-life for PHP 8.1 (php8.1) is 2025-11-24</td>
+<td>Upstream end-of-life for PHP 8.1 (php8.1) is 2024-11-25</td>
+</tr>
+<tr class="supported">
+<td>php8.1-bcmath</td>
+<td>Upstream end-of-life for PHP 8.1 (php8.1) is 2024-11-25</td>
+</tr>
+<tr class="supported">
+<td>php8.1-cli</td>
+<td>Upstream end-of-life for PHP 8.1 (php8.1) is 2024-11-25</td>
+</tr>
+<tr class="supported">
+<td>php8.1-common</td>
+<td>Upstream end-of-life for PHP 8.1 (php8.1) is 2024-11-25</td>
+</tr>
+<tr class="supported">
+<td>php8.1-dba</td>
+<td>Upstream end-of-life for PHP 8.1 (php8.1) is 2024-11-25</td>
+</tr>
+<tr class="supported">
+<td>php8.1-dbg</td>
+<td>Upstream end-of-life for PHP 8.1 (php8.1) is 2024-11-25</td>
+</tr>
+<tr class="supported">
+<td>php8.1-devel</td>
+<td>Upstream end-of-life for PHP 8.1 (php8.1) is 2024-11-25</td>
+</tr>
+<tr class="supported">
+<td>php8.1-embedded</td>
+<td>Upstream end-of-life for PHP 8.1 (php8.1) is 2024-11-25</td>
+</tr>
+<tr class="supported">
+<td>php8.1-enchant</td>
+<td>Upstream end-of-life for PHP 8.1 (php8.1) is 2024-11-25</td>
+</tr>
+<tr class="supported">
+<td>php8.1-ffi</td>
+<td>Upstream end-of-life for PHP 8.1 (php8.1) is 2024-11-25</td>
+</tr>
+<tr class="supported">
+<td>php8.1-fpm</td>
+<td>Upstream end-of-life for PHP 8.1 (php8.1) is 2024-11-25</td>
+</tr>
+<tr class="supported">
+<td>php8.1-gd</td>
+<td>Upstream end-of-life for PHP 8.1 (php8.1) is 2024-11-25</td>
+</tr>
+<tr class="supported">
+<td>php8.1-gmp</td>
+<td>Upstream end-of-life for PHP 8.1 (php8.1) is 2024-11-25</td>
+</tr>
+<tr class="supported">
+<td>php8.1-intl</td>
+<td>Upstream end-of-life for PHP 8.1 (php8.1) is 2024-11-25</td>
+</tr>
+<tr class="supported">
+<td>php8.1-ldap</td>
+<td>Upstream end-of-life for PHP 8.1 (php8.1) is 2024-11-25</td>
+</tr>
+<tr class="supported">
+<td>php8.1-mbstring</td>
+<td>Upstream end-of-life for PHP 8.1 (php8.1) is 2024-11-25</td>
+</tr>
+<tr class="supported">
+<td>php8.1-mysqlnd</td>
+<td>Upstream end-of-life for PHP 8.1 (php8.1) is 2024-11-25</td>
+</tr>
+<tr class="supported">
+<td>php8.1-odbc</td>
+<td>Upstream end-of-life for PHP 8.1 (php8.1) is 2024-11-25</td>
+</tr>
+<tr class="supported">
+<td>php8.1-opcache</td>
+<td>Upstream end-of-life for PHP 8.1 (php8.1) is 2024-11-25</td>
+</tr>
+<tr class="supported">
+<td>php8.1-pdo</td>
+<td>Upstream end-of-life for PHP 8.1 (php8.1) is 2024-11-25</td>
+</tr>
+<tr class="supported">
+<td>php8.1-pgsql</td>
+<td>Upstream end-of-life for PHP 8.1 (php8.1) is 2024-11-25</td>
+</tr>
+<tr class="supported">
+<td>php8.1-process</td>
+<td>Upstream end-of-life for PHP 8.1 (php8.1) is 2024-11-25</td>
+</tr>
+<tr class="supported">
+<td>php8.1-pspell</td>
+<td>Upstream end-of-life for PHP 8.1 (php8.1) is 2024-11-25</td>
+</tr>
+<tr class="supported">
+<td>php8.1-snmp</td>
+<td>Upstream end-of-life for PHP 8.1 (php8.1) is 2024-11-25</td>
+</tr>
+<tr class="supported">
+<td>php8.1-soap</td>
+<td>Upstream end-of-life for PHP 8.1 (php8.1) is 2024-11-25</td>
+</tr>
+<tr class="supported">
+<td>php8.1-tidy</td>
+<td>Upstream end-of-life for PHP 8.1 (php8.1) is 2024-11-25</td>
+</tr>
+<tr class="supported">
+<td>php8.1-xml</td>
+<td>Upstream end-of-life for PHP 8.1 (php8.1) is 2024-11-25</td>
+</tr>
+</table>
+<h2><a name="eol_php8.2">PHP 8.2 has security support until December 2025</a></h2>
+<p><a href="https://www.php.net/supported-versions">https://www.php.net/supported-versions</a></p>
+<p>Support period for PHP 8.2 is the same as PHP 8.2 upstream end-of-life.</p>
+<h3>Package List</h3>
+<table cellspacing="0">
+<tr>
+<th>Package</th>
+<th>Note</th>
+</tr>
+<tr class="supported">
+<td>php8.2</td>
+<td>Upstream end-of-life for PHP 8.2 (php8.2) is 2025-12-08</td>
+</tr>
+<tr class="supported">
+<td>php8.2-bcmath</td>
+<td>Upstream end-of-life for PHP 8.2 (php8.2) is 2025-12-08</td>
+</tr>
+<tr class="supported">
+<td>php8.2-cli</td>
+<td>Upstream end-of-life for PHP 8.2 (php8.2) is 2025-12-08</td>
+</tr>
+<tr class="supported">
+<td>php8.2-common</td>
+<td>Upstream end-of-life for PHP 8.2 (php8.2) is 2025-12-08</td>
+</tr>
+<tr class="supported">
+<td>php8.2-dba</td>
+<td>Upstream end-of-life for PHP 8.2 (php8.2) is 2025-12-08</td>
+</tr>
+<tr class="supported">
+<td>php8.2-dbg</td>
+<td>Upstream end-of-life for PHP 8.2 (php8.2) is 2025-12-08</td>
+</tr>
+<tr class="supported">
+<td>php8.2-devel</td>
+<td>Upstream end-of-life for PHP 8.2 (php8.2) is 2025-12-08</td>
+</tr>
+<tr class="supported">
+<td>php8.2-embedded</td>
+<td>Upstream end-of-life for PHP 8.2 (php8.2) is 2025-12-08</td>
+</tr>
+<tr class="supported">
+<td>php8.2-enchant</td>
+<td>Upstream end-of-life for PHP 8.2 (php8.2) is 2025-12-08</td>
+</tr>
+<tr class="supported">
+<td>php8.2-ffi</td>
+<td>Upstream end-of-life for PHP 8.2 (php8.2) is 2025-12-08</td>
+</tr>
+<tr class="supported">
+<td>php8.2-fpm</td>
+<td>Upstream end-of-life for PHP 8.2 (php8.2) is 2025-12-08</td>
+</tr>
+<tr class="supported">
+<td>php8.2-gd</td>
+<td>Upstream end-of-life for PHP 8.2 (php8.2) is 2025-12-08</td>
+</tr>
+<tr class="supported">
+<td>php8.2-gmp</td>
+<td>Upstream end-of-life for PHP 8.2 (php8.2) is 2025-12-08</td>
+</tr>
+<tr class="supported">
+<td>php8.2-intl</td>
+<td>Upstream end-of-life for PHP 8.2 (php8.2) is 2025-12-08</td>
+</tr>
+<tr class="supported">
+<td>php8.2-ldap</td>
+<td>Upstream end-of-life for PHP 8.2 (php8.2) is 2025-12-08</td>
+</tr>
+<tr class="supported">
+<td>php8.2-mbstring</td>
+<td>Upstream end-of-life for PHP 8.2 (php8.2) is 2025-12-08</td>
+</tr>
+<tr class="supported">
+<td>php8.2-mysqlnd</td>
+<td>Upstream end-of-life for PHP 8.2 (php8.2) is 2025-12-08</td>
+</tr>
+<tr class="supported">
+<td>php8.2-odbc</td>
+<td>Upstream end-of-life for PHP 8.2 (php8.2) is 2025-12-08</td>
+</tr>
+<tr class="supported">
+<td>php8.2-opcache</td>
+<td>Upstream end-of-life for PHP 8.2 (php8.2) is 2025-12-08</td>
+</tr>
+<tr class="supported">
+<td>php8.2-pdo</td>
+<td>Upstream end-of-life for PHP 8.2 (php8.2) is 2025-12-08</td>
+</tr>
+<tr class="supported">
+<td>php8.2-pgsql</td>
+<td>Upstream end-of-life for PHP 8.2 (php8.2) is 2025-12-08</td>
+</tr>
+<tr class="supported">
+<td>php8.2-process</td>
+<td>Upstream end-of-life for PHP 8.2 (php8.2) is 2025-12-08</td>
+</tr>
+<tr class="supported">
+<td>php8.2-pspell</td>
+<td>Upstream end-of-life for PHP 8.2 (php8.2) is 2025-12-08</td>
+</tr>
+<tr class="supported">
+<td>php8.2-snmp</td>
+<td>Upstream end-of-life for PHP 8.2 (php8.2) is 2025-12-08</td>
+</tr>
+<tr class="supported">
+<td>php8.2-soap</td>
+<td>Upstream end-of-life for PHP 8.2 (php8.2) is 2025-12-08</td>
+</tr>
+<tr class="supported">
+<td>php8.2-tidy</td>
+<td>Upstream end-of-life for PHP 8.2 (php8.2) is 2025-12-08</td>
+</tr>
+<tr class="supported">
+<td>php8.2-xml</td>
+<td>Upstream end-of-life for PHP 8.2 (php8.2) is 2025-12-08</td>
 </tr>
 </table>
 <h2><a name="eol_postgresql15">PostgreSQL 15 has security support until November 2027</a></h2>
@@ -117,19 +521,67 @@
 </tr>
 <tr class="supported">
 <td>postgresql15</td>
-<td>This package has a runtime dependency on postgresql15, and thus also falls under the support statements for postgresql15. Upstream end-of-life for PostgreSQL 15 (postgresql15) is 2027-11-11</td>
+<td>Upstream end-of-life for PostgreSQL 15 (postgresql15) is 2027-11-11</td>
 </tr>
 <tr class="supported">
 <td>postgresql15-contrib</td>
-<td>This package has a runtime dependency on postgresql15, and thus also falls under the support statements for postgresql15. Upstream end-of-life for PostgreSQL 15 (postgresql15) is 2027-11-11</td>
+<td>Upstream end-of-life for PostgreSQL 15 (postgresql15) is 2027-11-11</td>
 </tr>
 <tr class="supported">
 <td>postgresql15-docs</td>
-<td>This package has a runtime dependency on postgresql15, and thus also falls under the support statements for postgresql15. Upstream end-of-life for PostgreSQL 15 (postgresql15) is 2027-11-11</td>
+<td>Upstream end-of-life for PostgreSQL 15 (postgresql15) is 2027-11-11</td>
+</tr>
+<tr class="supported">
+<td>postgresql15-llvmjit</td>
+<td>Upstream end-of-life for PostgreSQL 15 (postgresql15) is 2027-11-11</td>
+</tr>
+<tr class="supported">
+<td>postgresql15-plperl</td>
+<td>Upstream end-of-life for PostgreSQL 15 (postgresql15) is 2027-11-11</td>
+</tr>
+<tr class="supported">
+<td>postgresql15-plpython3</td>
+<td>Upstream end-of-life for PostgreSQL 15 (postgresql15) is 2027-11-11</td>
+</tr>
+<tr class="supported">
+<td>postgresql15-pltcl</td>
+<td>Upstream end-of-life for PostgreSQL 15 (postgresql15) is 2027-11-11</td>
+</tr>
+<tr class="supported">
+<td>postgresql15-private-devel</td>
+<td>Upstream end-of-life for PostgreSQL 15 (postgresql15) is 2027-11-11</td>
+</tr>
+<tr class="supported">
+<td>postgresql15-private-libs</td>
+<td>Upstream end-of-life for PostgreSQL 15 (postgresql15) is 2027-11-11</td>
 </tr>
 <tr class="supported">
 <td>postgresql15-server</td>
-<td>This package has a runtime dependency on postgresql15, and thus also falls under the support statements for postgresql15. Upstream end-of-life for PostgreSQL 15 (postgresql15) is 2027-11-11</td>
+<td>Upstream end-of-life for PostgreSQL 15 (postgresql15) is 2027-11-11</td>
+</tr>
+<tr class="supported">
+<td>postgresql15-server-devel</td>
+<td>Upstream end-of-life for PostgreSQL 15 (postgresql15) is 2027-11-11</td>
+</tr>
+<tr class="supported">
+<td>postgresql15-static</td>
+<td>Upstream end-of-life for PostgreSQL 15 (postgresql15) is 2027-11-11</td>
+</tr>
+<tr class="supported">
+<td>postgresql15-test</td>
+<td>Upstream end-of-life for PostgreSQL 15 (postgresql15) is 2027-11-11</td>
+</tr>
+<tr class="supported">
+<td>postgresql15-test-rpm-macros</td>
+<td>Upstream end-of-life for PostgreSQL 15 (postgresql15) is 2027-11-11</td>
+</tr>
+<tr class="supported">
+<td>postgresql15-upgrade</td>
+<td>Upstream end-of-life for PostgreSQL 15 (postgresql15) is 2027-11-11</td>
+</tr>
+<tr class="supported">
+<td>postgresql15-upgrade-devel</td>
+<td>Upstream end-of-life for PostgreSQL 15 (postgresql15) is 2027-11-11</td>
 </tr>
 </table>
 <h2><a name="eol_python3">Python 3.9 (System Python) has security support until March 2028</a></h2>
@@ -143,759 +595,845 @@
 </tr>
 <tr class="supported">
 <td>python3</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>authselect-compat</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>aws-nitro-enclaves-cli-integration-tests</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>bcache-tools</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>bcc-tools</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>bind-dnssec-utils</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>blktrace</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>boost-mpich-python3</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>boost-openmpi-python3</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>cifs-utils-info</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>clang-tools-extra</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>compiler-rt</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>cppcheck</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>cppcheck-htmlreport</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>crit</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>criu-ns</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>dwarves</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>environment-modules</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>fio</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>fontforge</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>git-clang-format</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>glib2-devel</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>glib2-tests</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>glibc-benchtests</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>gobject-introspection-devel</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>gtk-doc</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>ibus</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>ibus-anthy-tests</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>ibus-hangul</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>iotop</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>kpatch-dnf</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>libbytesize-tools</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>libcap-ng-python3</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>libevent-devel</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>libinput-utils</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>libstoragemgmt</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>libstoragemgmt-nfs-plugin</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>libwacom</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>llvm</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>llvm-googletest</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>lttng-ust-devel</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>lvm2-testsuite</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
-</tr>
-<tr class="supported">
-<td>mariadb105-rocksdb-engine</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>mercurial</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>mercurial-hgk</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>nfs-stats-utils</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>nfs-utils</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>nfsv4-client-utils</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>nghttp2</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>ninja-build</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>openscap-python3</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>openscap-utils</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>papi</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>patchutils</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>pcsc-lite</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>pcsc-lite-devel</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>pesign</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>policycoreutils-devel</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>psl-make-dafsa</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>pybind11-devel</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python-chevron</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-Cython</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-audit</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-awscrt</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-babeltrace</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-bcrypt</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-blockdev</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-brotli</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-bson</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-bytesize</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-cairo</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-capstone</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-cffi</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-clang</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-coverage</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-coverage+toml</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-createrepo_c</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-criu</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-crypto</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-cryptography</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-cups</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-dbus</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-debug</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-devel</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-dulwich</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-gobject</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-gobject-base</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+</tr>
+<tr class="supported">
+<td>python3-google-crc32c</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+</tr>
+<tr class="supported">
+<td>python3-google-crc32c+testing</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-gpg</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-greenlet</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-gssapi</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-hawkey</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-idle</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-imath</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+</tr>
+<tr class="supported">
+<td>python3-iscsi-initiator-utils</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-kmod</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-ldb</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-libcomps</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-libdnf</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-libfdt</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-libipa_hbac</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-libmodulemd</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-libmount</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-libnl3</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-libpamtest</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-libpfm</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-libplist</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-librepo</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-libreport</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-libselinux</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-libsemanage</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-libsss_nss_idmap</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-libstoragemgmt</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-libuser</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-libxml2</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-lldb</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-lttngust</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-lxml</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-markupsafe</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-mistune</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-mpich</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+</tr>
+<tr class="supported">
+<td>python3-net-snmp</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-netifaces</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-newt</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-nftables</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-numpy</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-numpy-f2py</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-openmpi</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-perf</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-pillow</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-pillow-tk</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-protobuf</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-psutil</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-psutil-tests</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-psycopg2</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-psycopg2-debug</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-psycopg2-tests</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-pwquality</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-pybind11</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-pycryptodomex</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-pycryptodomex-selftest</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-pycurl</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-pymongo</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-pymongo-gridfs</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-pyqt4-sip</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-pyqt5-sip</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-pyrsistent</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-pyverbs</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-pyxattr</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-pyyaml</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-rpm</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-rrdtool</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-ruamel-yaml</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-ruamel-yaml-clib</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-rust2rpm</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-samba</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+</tr>
+<tr class="supported">
+<td>python3-samba-dc</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-samba-test</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-sanlock</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-satyr</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-scipy</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-setools</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-setproctitle</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-simplejson</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-sip-devel</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-solv</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-sqlalchemy</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-sss</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-sss-murmur</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-subversion</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-talloc</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-tbb</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-tdb</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-test</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-tevent</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-tkinter</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-tornado</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-tre</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-typed_ast</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-unbound</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+</tr>
+<tr class="supported">
+<td>python3-urwid</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-volume_key</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>python3-zope-interface</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>samba-common-tools</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+</tr>
+<tr class="supported">
+<td>samba-tools</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>setools-console</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>sip5</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>sssd-tools</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>systemd-tests</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>systemtap-devel</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>systemtap-exporter</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>systemtap-runtime-python3</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>systemtap-sdt-devel</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>texlive-spix</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
 </tr>
 <tr class="supported">
 <td>xfsprogs-xfs_scrub</td>
-<td>This package has a runtime dependency on python3, and thus also falls under the support statements for python3. Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+<td>Upstream end-of-life for Python 3.9 (System Python) (python3) is 2028-03-15</td>
+</tr>
+</table>
+<h2><a name="eol_python3.11">Python 3.11 has security support until October 2027</a></h2>
+<p><a href="https://devguide.python.org/versions/">https://devguide.python.org/versions/</a></p>
+<p>AL2023 provides Python 3.11 that can be installed alongside the System Python (Python 3.9). Amazon will provide security patches and support for this version of Python until the upstream end-of-life of Python 3.11, which is estimated to be in October 2027. If a version of Python is required that is supported until the EOL of Amazon Linux 2023, use Python 3.9 which is the System Python for AL2023.</p>
+<h3>Package List</h3>
+<table cellspacing="0">
+<tr>
+<th>Package</th>
+<th>Note</th>
+</tr>
+<tr class="supported">
+<td>python3.11</td>
+<td>Upstream end-of-life for Python 3.11 (python3.11) is 2027-10-01</td>
+</tr>
+<tr class="supported">
+<td>python3.11-debug</td>
+<td>Upstream end-of-life for Python 3.11 (python3.11) is 2027-10-01</td>
+</tr>
+<tr class="supported">
+<td>python3.11-devel</td>
+<td>Upstream end-of-life for Python 3.11 (python3.11) is 2027-10-01</td>
+</tr>
+<tr class="supported">
+<td>python3.11-idle</td>
+<td>Upstream end-of-life for Python 3.11 (python3.11) is 2027-10-01</td>
+</tr>
+<tr class="supported">
+<td>python3.11-libs</td>
+<td>Upstream end-of-life for Python 3.11 (python3.11) is 2027-10-01</td>
+</tr>
+<tr class="supported">
+<td>python3.11-pip</td>
+<td>Upstream end-of-life for Python 3.11 (python3.11) is 2027-10-01</td>
+</tr>
+<tr class="supported">
+<td>python3.11-pip-wheel</td>
+<td>Upstream end-of-life for Python 3.11 (python3.11) is 2027-10-01</td>
+</tr>
+<tr class="supported">
+<td>python3.11-setuptools</td>
+<td>Upstream end-of-life for Python 3.11 (python3.11) is 2027-10-01</td>
+</tr>
+<tr class="supported">
+<td>python3.11-setuptools-wheel</td>
+<td>Upstream end-of-life for Python 3.11 (python3.11) is 2027-10-01</td>
+</tr>
+<tr class="supported">
+<td>python3.11-test</td>
+<td>Upstream end-of-life for Python 3.11 (python3.11) is 2027-10-01</td>
+</tr>
+<tr class="supported">
+<td>python3.11-tkinter</td>
+<td>Upstream end-of-life for Python 3.11 (python3.11) is 2027-10-01</td>
+</tr>
+<tr class="supported">
+<td>python3.11-wheel</td>
+<td>Upstream end-of-life for Python 3.11 (python3.11) is 2027-10-01</td>
+</tr>
+<tr class="supported">
+<td>python3.11-wheel-wheel</td>
+<td>Upstream end-of-life for Python 3.11 (python3.11) is 2027-10-01</td>
 </tr>
 </table>
 <h2><a name="eol_redis6">Redis 6 has security support until August 2025</a></h2>
@@ -911,6 +1449,14 @@
 <td>redis6</td>
 <td>Upstream end-of-life for Redis 6 (redis6) is 2025-08-31</td>
 </tr>
+<tr class="supported">
+<td>redis6-devel</td>
+<td>Upstream end-of-life for Redis 6 (redis6) is 2025-08-31</td>
+</tr>
+<tr class="supported">
+<td>redis6-doc</td>
+<td>Upstream end-of-life for Redis 6 (redis6) is 2025-08-31</td>
+</tr>
 </table>
 <h2><a name="eol_ruby3.2">Ruby 3.2 has security support until March 2026</a></h2>
 <p><a href="https://www.ruby-lang.org/en/downloads/branches/">https://www.ruby-lang.org/en/downloads/branches/</a></p>
@@ -923,19 +1469,95 @@
 </tr>
 <tr class="supported">
 <td>ruby3.2</td>
-<td>This package has a runtime dependency on ruby3.2, and thus also falls under the support statements for ruby3.2. Upstream end-of-life for Ruby 3.2 (ruby3.2) is 2026-03-21</td>
+<td>Upstream end-of-life for Ruby 3.2 (ruby3.2) is 2026-03-21</td>
+</tr>
+<tr class="supported">
+<td>ruby3.2-default-gems</td>
+<td>Upstream end-of-life for Ruby 3.2 (ruby3.2) is 2026-03-21</td>
+</tr>
+<tr class="supported">
+<td>ruby3.2-doc</td>
+<td>Upstream end-of-life for Ruby 3.2 (ruby3.2) is 2026-03-21</td>
+</tr>
+<tr class="supported">
+<td>ruby3.2-libs</td>
+<td>Upstream end-of-life for Ruby 3.2 (ruby3.2) is 2026-03-21</td>
+</tr>
+<tr class="supported">
+<td>ruby3.2-rubygem-bigdecimal</td>
+<td>Upstream end-of-life for Ruby 3.2 (ruby3.2) is 2026-03-21</td>
+</tr>
+<tr class="supported">
+<td>ruby3.2-rubygem-bundler</td>
+<td>Upstream end-of-life for Ruby 3.2 (ruby3.2) is 2026-03-21</td>
+</tr>
+<tr class="supported">
+<td>ruby3.2-rubygem-io-console</td>
+<td>Upstream end-of-life for Ruby 3.2 (ruby3.2) is 2026-03-21</td>
+</tr>
+<tr class="supported">
+<td>ruby3.2-rubygem-irb</td>
+<td>Upstream end-of-life for Ruby 3.2 (ruby3.2) is 2026-03-21</td>
+</tr>
+<tr class="supported">
+<td>ruby3.2-rubygem-json</td>
+<td>Upstream end-of-life for Ruby 3.2 (ruby3.2) is 2026-03-21</td>
+</tr>
+<tr class="supported">
+<td>ruby3.2-rubygem-minitest</td>
+<td>Upstream end-of-life for Ruby 3.2 (ruby3.2) is 2026-03-21</td>
+</tr>
+<tr class="supported">
+<td>ruby3.2-rubygem-power_assert</td>
+<td>Upstream end-of-life for Ruby 3.2 (ruby3.2) is 2026-03-21</td>
+</tr>
+<tr class="supported">
+<td>ruby3.2-rubygem-psych</td>
+<td>Upstream end-of-life for Ruby 3.2 (ruby3.2) is 2026-03-21</td>
+</tr>
+<tr class="supported">
+<td>ruby3.2-rubygem-rake</td>
+<td>Upstream end-of-life for Ruby 3.2 (ruby3.2) is 2026-03-21</td>
+</tr>
+<tr class="supported">
+<td>ruby3.2-rubygem-rdoc</td>
+<td>Upstream end-of-life for Ruby 3.2 (ruby3.2) is 2026-03-21</td>
+</tr>
+<tr class="supported">
+<td>ruby3.2-rubygem-rexml</td>
+<td>Upstream end-of-life for Ruby 3.2 (ruby3.2) is 2026-03-21</td>
+</tr>
+<tr class="supported">
+<td>ruby3.2-rubygem-rss</td>
+<td>Upstream end-of-life for Ruby 3.2 (ruby3.2) is 2026-03-21</td>
+</tr>
+<tr class="supported">
+<td>ruby3.2-rubygem-test-unit</td>
+<td>Upstream end-of-life for Ruby 3.2 (ruby3.2) is 2026-03-21</td>
+</tr>
+<tr class="supported">
+<td>ruby3.2-rubygem-typeprof</td>
+<td>Upstream end-of-life for Ruby 3.2 (ruby3.2) is 2026-03-21</td>
+</tr>
+<tr class="supported">
+<td>ruby3.2-rubygems</td>
+<td>Upstream end-of-life for Ruby 3.2 (ruby3.2) is 2026-03-21</td>
+</tr>
+<tr class="supported">
+<td>ruby3.2-rubygems-devel</td>
+<td>Upstream end-of-life for Ruby 3.2 (ruby3.2) is 2026-03-21</td>
 </tr>
 <tr class="supported">
 <td>ruby3.2-bundled-gems</td>
-<td>This package has a runtime dependency on ruby3.2, and thus also falls under the support statements for ruby3.2. Upstream end-of-life for Ruby 3.2 (ruby3.2) is 2026-03-21</td>
+<td>Upstream end-of-life for Ruby 3.2 (ruby3.2) is 2026-03-21</td>
 </tr>
 <tr class="supported">
 <td>ruby3.2-devel</td>
-<td>This package has a runtime dependency on ruby3.2, and thus also falls under the support statements for ruby3.2. Upstream end-of-life for Ruby 3.2 (ruby3.2) is 2026-03-21</td>
+<td>Upstream end-of-life for Ruby 3.2 (ruby3.2) is 2026-03-21</td>
 </tr>
 <tr class="supported">
 <td>ruby3.2-rubygem-rbs</td>
-<td>This package has a runtime dependency on ruby3.2, and thus also falls under the support statements for ruby3.2. Upstream end-of-life for Ruby 3.2 (ruby3.2) is 2026-03-21</td>
+<td>Upstream end-of-life for Ruby 3.2 (ruby3.2) is 2026-03-21</td>
 </tr>
 </table>
 <h2><a name="eol_pcre">PCRE has security support until June 2024</a></h2>
@@ -949,35 +1571,35 @@
 </tr>
 <tr class="supported">
 <td>pcre</td>
-<td>This package has a runtime dependency on pcre, and thus also falls under the support statements for pcre. Upstream end-of-life for PCRE (pcre) is 2024-06-30</td>
+<td>Upstream end-of-life for PCRE (pcre) is 2024-06-30</td>
 </tr>
 <tr class="supported">
 <td>nmap</td>
-<td>This package has a runtime dependency on pcre, and thus also falls under the support statements for pcre. Upstream end-of-life for PCRE (pcre) is 2024-06-30</td>
+<td>Upstream end-of-life for PCRE (pcre) is 2024-06-30</td>
 </tr>
 <tr class="supported">
 <td>openscap</td>
-<td>This package has a runtime dependency on pcre, and thus also falls under the support statements for pcre. Upstream end-of-life for PCRE (pcre) is 2024-06-30</td>
+<td>Upstream end-of-life for PCRE (pcre) is 2024-06-30</td>
 </tr>
 <tr class="supported">
 <td>openscap-engine-sce</td>
-<td>This package has a runtime dependency on pcre, and thus also falls under the support statements for pcre. Upstream end-of-life for PCRE (pcre) is 2024-06-30</td>
+<td>Upstream end-of-life for PCRE (pcre) is 2024-06-30</td>
 </tr>
 <tr class="supported">
 <td>pcre-cpp</td>
-<td>This package has a runtime dependency on pcre, and thus also falls under the support statements for pcre. Upstream end-of-life for PCRE (pcre) is 2024-06-30</td>
+<td>Upstream end-of-life for PCRE (pcre) is 2024-06-30</td>
 </tr>
 <tr class="supported">
 <td>pcre-devel</td>
-<td>This package has a runtime dependency on pcre, and thus also falls under the support statements for pcre. Upstream end-of-life for PCRE (pcre) is 2024-06-30</td>
+<td>Upstream end-of-life for PCRE (pcre) is 2024-06-30</td>
 </tr>
 <tr class="supported">
 <td>pcre-tools</td>
-<td>This package has a runtime dependency on pcre, and thus also falls under the support statements for pcre. Upstream end-of-life for PCRE (pcre) is 2024-06-30</td>
+<td>Upstream end-of-life for PCRE (pcre) is 2024-06-30</td>
 </tr>
 <tr class="supported">
 <td>zsh</td>
-<td>This package has a runtime dependency on pcre, and thus also falls under the support statements for pcre. Upstream end-of-life for PCRE (pcre) is 2024-06-30</td>
+<td>Upstream end-of-life for PCRE (pcre) is 2024-06-30</td>
 </tr>
 </table>
 <h2><a name="eol_dotnet">Dotnet6.0 has security support until November 2024</a></h2>
@@ -992,6 +1614,168 @@
 <tr class="supported">
 <td>dotnet</td>
 <td>Upstream end-of-life for Dotnet6.0 (dotnet) is 2024-11-12</td>
+</tr>
+<tr class="supported">
+<td>dotnet-apphost-pack-6.0</td>
+<td>Upstream end-of-life for Dotnet6.0 (dotnet) is 2024-11-12</td>
+</tr>
+<tr class="supported">
+<td>dotnet-host</td>
+<td>Upstream end-of-life for Dotnet6.0 (dotnet) is 2024-11-12</td>
+</tr>
+<tr class="supported">
+<td>dotnet-hostfxr-6.0</td>
+<td>Upstream end-of-life for Dotnet6.0 (dotnet) is 2024-11-12</td>
+</tr>
+<tr class="supported">
+<td>dotnet-runtime-6.0</td>
+<td>Upstream end-of-life for Dotnet6.0 (dotnet) is 2024-11-12</td>
+</tr>
+<tr class="supported">
+<td>dotnet-sdk-6.0</td>
+<td>Upstream end-of-life for Dotnet6.0 (dotnet) is 2024-11-12</td>
+</tr>
+<tr class="supported">
+<td>dotnet-sdk-6.0-source-built-artifacts</td>
+<td>Upstream end-of-life for Dotnet6.0 (dotnet) is 2024-11-12</td>
+</tr>
+<tr class="supported">
+<td>dotnet-targeting-pack-6.0</td>
+<td>Upstream end-of-life for Dotnet6.0 (dotnet) is 2024-11-12</td>
+</tr>
+<tr class="supported">
+<td>dotnet-templates-6.0</td>
+<td>Upstream end-of-life for Dotnet6.0 (dotnet) is 2024-11-12</td>
+</tr>
+<tr class="supported">
+<td>aspnetcore-targeting-pack-6.0</td>
+<td>This package has a runtime dependency on dotnet-host, and thus also falls under the support statements for dotnet. Upstream end-of-life for Dotnet6.0 (dotnet) is 2024-11-12</td>
+</tr>
+<tr class="supported">
+<td>netstandard-targeting-pack-2.1</td>
+<td>This package has a runtime dependency on dotnet-host, and thus also falls under the support statements for dotnet. Upstream end-of-life for Dotnet6.0 (dotnet) is 2024-11-12</td>
+</tr>
+<tr class="supported">
+<td>aspnetcore-runtime-6.0</td>
+<td>This package has a runtime dependency on dotnet-host, and thus also falls under the support statements for dotnet. Upstream end-of-life for Dotnet6.0 (dotnet) is 2024-11-12</td>
+</tr>
+</table>
+<h2><a name="eol_kernel">Kernel has security support until March 2028</a></h2>
+<p><a href="https://aws.amazon.com/amazon-linux-ami/faqs/">https://aws.amazon.com/amazon-linux-ami/faqs/</a></p>
+<p>There may be live patches available for a kernel for the first three months after it is released. Individual live patches don't get updates, but new live patches and new kernels may be released.</p>
+<h3>Package List</h3>
+<table cellspacing="0">
+<tr>
+<th>Package</th>
+<th>Note</th>
+</tr>
+<tr class="supported">
+<td>kernel</td>
+<td>Amazon Linux will support a kernel until AL2023 End of Life</td>
+</tr>
+<tr class="supported">
+<td>kernel-devel</td>
+<td>Amazon Linux will support a kernel until AL2023 End of Life</td>
+</tr>
+<tr class="supported">
+<td>kernel-libbpf</td>
+<td>Amazon Linux will support a kernel until AL2023 End of Life</td>
+</tr>
+<tr class="supported">
+<td>kernel-libbpf-devel</td>
+<td>Amazon Linux will support a kernel until AL2023 End of Life</td>
+</tr>
+<tr class="supported">
+<td>kernel-libbpf-static</td>
+<td>Amazon Linux will support a kernel until AL2023 End of Life</td>
+</tr>
+<tr class="supported">
+<td>kernel-livepatch-6.1.10-15.42</td>
+<td>Amazon Linux will support a kernel until AL2023 End of Life</td>
+</tr>
+<tr class="supported">
+<td>kernel-livepatch-6.1.12-17.42</td>
+<td>Amazon Linux will support a kernel until AL2023 End of Life</td>
+</tr>
+<tr class="supported">
+<td>kernel-livepatch-6.1.12-19.43</td>
+<td>Amazon Linux will support a kernel until AL2023 End of Life</td>
+</tr>
+<tr class="supported">
+<td>kernel-livepatch-6.1.15-28.43</td>
+<td>Amazon Linux will support a kernel until AL2023 End of Life</td>
+</tr>
+<tr class="supported">
+<td>kernel-livepatch-6.1.19-30.43</td>
+<td>Amazon Linux will support a kernel until AL2023 End of Life</td>
+</tr>
+<tr class="supported">
+<td>kernel-livepatch-6.1.21-1.45</td>
+<td>Amazon Linux will support a kernel until AL2023 End of Life</td>
+</tr>
+<tr class="supported">
+<td>kernel-livepatch-6.1.23-36.46</td>
+<td>Amazon Linux will support a kernel until AL2023 End of Life</td>
+</tr>
+<tr class="supported">
+<td>kernel-livepatch-6.1.25-37.47</td>
+<td>Amazon Linux will support a kernel until AL2023 End of Life</td>
+</tr>
+<tr class="supported">
+<td>kernel-livepatch-6.1.27-43.48</td>
+<td>Amazon Linux will support a kernel until AL2023 End of Life</td>
+</tr>
+<tr class="supported">
+<td>kernel-livepatch-6.1.29-47.49</td>
+<td>Amazon Linux will support a kernel until AL2023 End of Life</td>
+</tr>
+<tr class="supported">
+<td>kernel-livepatch-6.1.29-50.88</td>
+<td>Amazon Linux will support a kernel until AL2023 End of Life</td>
+</tr>
+<tr class="supported">
+<td>kernel-livepatch-6.1.34-56.100</td>
+<td>Amazon Linux will support a kernel until AL2023 End of Life</td>
+</tr>
+<tr class="supported">
+<td>kernel-livepatch-6.1.34-58.102</td>
+<td>Amazon Linux will support a kernel until AL2023 End of Life</td>
+</tr>
+<tr class="supported">
+<td>kernel-livepatch-6.1.34-59.116</td>
+<td>Amazon Linux will support a kernel until AL2023 End of Life</td>
+</tr>
+<tr class="supported">
+<td>kernel-livepatch-6.1.38-59.109</td>
+<td>Amazon Linux will support a kernel until AL2023 End of Life</td>
+</tr>
+<tr class="supported">
+<td>kernel-livepatch-6.1.41-63.109</td>
+<td>Amazon Linux will support a kernel until AL2023 End of Life</td>
+</tr>
+<tr class="supported">
+<td>kernel-livepatch-6.1.41-63.114</td>
+<td>Amazon Linux will support a kernel until AL2023 End of Life</td>
+</tr>
+<tr class="supported">
+<td>kernel-livepatch-repo-cdn</td>
+<td>Amazon Linux will support a kernel until AL2023 End of Life</td>
+</tr>
+<tr class="supported">
+<td>kernel-livepatch-repo-s3</td>
+<td>Amazon Linux will support a kernel until AL2023 End of Life</td>
+</tr>
+<tr class="supported">
+<td>bcc</td>
+<td>This package has a runtime dependency on kernel-libbpf, and thus also falls under the support statements for kernel. Amazon Linux will support a kernel until AL2023 End of Life</td>
+</tr>
+<tr class="supported">
+<td>bpftrace</td>
+<td>This package has a runtime dependency on kernel-libbpf, and thus also falls under the support statements for kernel. Amazon Linux will support a kernel until AL2023 End of Life</td>
+</tr>
+<tr class="supported">
+<td>libabigail</td>
+<td>This package has a runtime dependency on kernel-libbpf, and thus also falls under the support statements for kernel. Amazon Linux will support a kernel until AL2023 End of Life</td>
 </tr>
 </table>
 <h2><a name="eol">Amazon Linux 2023 end-of-life</a></h2>
@@ -1129,14 +1913,6 @@
 </tr>
 <tr class="supported">
 <td>R-devel</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>R-java</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>R-java-devel</td>
 <td></td>
 </tr>
 <tr class="supported">
@@ -1332,11 +2108,23 @@
 <td></td>
 </tr>
 <tr class="supported">
+<td>amazon-linux-onprem</td>
+<td></td>
+</tr>
+<tr class="supported">
 <td>amazon-linux-repo-cdn</td>
 <td></td>
 </tr>
 <tr class="supported">
 <td>amazon-linux-repo-s3</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>amazon-linux-sb-keys</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>amazon-onprem-network</td>
 <td></td>
 </tr>
 <tr class="supported">
@@ -1732,14 +2520,6 @@
 <td></td>
 </tr>
 <tr class="supported">
-<td>aspnetcore-runtime-6.0</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>aspnetcore-targeting-pack-6.0</td>
-<td></td>
-</tr>
-<tr class="supported">
 <td>assertj-core</td>
 <td></td>
 </tr>
@@ -2041,10 +2821,6 @@
 </tr>
 <tr class="supported">
 <td>bc</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>bcc</td>
 <td></td>
 </tr>
 <tr class="supported">
@@ -2500,10 +3276,6 @@
 <td></td>
 </tr>
 <tr class="supported">
-<td>bpftrace</td>
-<td></td>
-</tr>
-<tr class="supported">
 <td>brotli</td>
 <td></td>
 </tr>
@@ -2920,10 +3692,6 @@
 <td></td>
 </tr>
 <tr class="supported">
-<td>collectd-java</td>
-<td></td>
-</tr>
-<tr class="supported">
 <td>collectd-log_logstash</td>
 <td></td>
 </tr>
@@ -3152,6 +3920,10 @@
 <td></td>
 </tr>
 <tr class="supported">
+<td>cpuid</td>
+<td></td>
+</tr>
+<tr class="supported">
 <td>cracklib</td>
 <td></td>
 </tr>
@@ -3233,10 +4005,6 @@
 </tr>
 <tr class="supported">
 <td>cryptsetup-libs</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>cryptsetup-reencrypt</td>
 <td></td>
 </tr>
 <tr class="supported">
@@ -3365,6 +4133,10 @@
 </tr>
 <tr class="supported">
 <td>cyrus-sasl-sql</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>daemonize</td>
 <td></td>
 </tr>
 <tr class="supported">
@@ -3676,35 +4448,23 @@
 <td></td>
 </tr>
 <tr class="supported">
-<td>dotnet-apphost-pack-6.0</td>
+<td>dovecot</td>
 <td></td>
 </tr>
 <tr class="supported">
-<td>dotnet-host</td>
+<td>dovecot-devel</td>
 <td></td>
 </tr>
 <tr class="supported">
-<td>dotnet-hostfxr-6.0</td>
+<td>dovecot-mysql</td>
 <td></td>
 </tr>
 <tr class="supported">
-<td>dotnet-runtime-6.0</td>
+<td>dovecot-pgsql</td>
 <td></td>
 </tr>
 <tr class="supported">
-<td>dotnet-sdk-6.0</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>dotnet-sdk-6.0-source-built-artifacts</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>dotnet-targeting-pack-6.0</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>dotnet-templates-6.0</td>
+<td>dovecot-pigeonhole</td>
 <td></td>
 </tr>
 <tr class="supported">
@@ -3836,6 +4596,10 @@
 <td></td>
 </tr>
 <tr class="supported">
+<td>ecs-service-connect-agent</td>
+<td></td>
+</tr>
+<tr class="supported">
 <td>ed</td>
 <td></td>
 </tr>
@@ -3861,6 +4625,18 @@
 </tr>
 <tr class="supported">
 <td>efivar-libs</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>egl-wayland</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>egl-wayland-devel</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>eglexternalplatform-devel</td>
 <td></td>
 </tr>
 <tr class="supported">
@@ -5828,6 +6604,14 @@
 <td></td>
 </tr>
 <tr class="supported">
+<td>google-crc32c</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>google-crc32c-devel</td>
+<td></td>
+</tr>
+<tr class="supported">
 <td>google-droid-fonts-all</td>
 <td></td>
 </tr>
@@ -7664,6 +8448,10 @@
 <td></td>
 </tr>
 <tr class="supported">
+<td>haproxy</td>
+<td></td>
+</tr>
+<tr class="supported">
 <td>harfbuzz</td>
 <td></td>
 </tr>
@@ -7685,6 +8473,10 @@
 </tr>
 <tr class="supported">
 <td>hawtjni-runtime</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>hdparm</td>
 <td></td>
 </tr>
 <tr class="supported">
@@ -7988,6 +8780,10 @@
 <td></td>
 </tr>
 <tr class="supported">
+<td>iftop</td>
+<td></td>
+</tr>
+<tr class="supported">
 <td>ima-evm-utils</td>
 <td></td>
 </tr>
@@ -8041,6 +8837,14 @@
 </tr>
 <tr class="supported">
 <td>initscripts</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>inotify-tools</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>inotify-tools-devel</td>
 <td></td>
 </tr>
 <tr class="supported">
@@ -8136,7 +8940,23 @@
 <td></td>
 </tr>
 <tr class="supported">
+<td>ipvsadm</td>
+<td></td>
+</tr>
+<tr class="supported">
 <td>irqbalance</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>iscsi-initiator-utils</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>iscsi-initiator-utils-devel</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>iscsi-initiator-utils-iscsiuio</td>
 <td></td>
 </tr>
 <tr class="supported">
@@ -8145,6 +8965,18 @@
 </tr>
 <tr class="supported">
 <td>isl-devel</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>isns-utils</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>isns-utils-devel</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>isns-utils-libs</td>
 <td></td>
 </tr>
 <tr class="supported">
@@ -8416,54 +9248,6 @@
 <td></td>
 </tr>
 <tr class="supported">
-<td>java-1.8.0-amazon-corretto</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>java-1.8.0-amazon-corretto-devel</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>java-11-amazon-corretto</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>java-11-amazon-corretto-devel</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>java-11-amazon-corretto-headless</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>java-11-amazon-corretto-javadoc</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>java-11-amazon-corretto-jmods</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>java-17-amazon-corretto</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>java-17-amazon-corretto-devel</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>java-17-amazon-corretto-headless</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>java-17-amazon-corretto-javadoc</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>java-17-amazon-corretto-jmods</td>
-<td></td>
-</tr>
-<tr class="supported">
 <td>java_cup</td>
 <td></td>
 </tr>
@@ -8700,6 +9484,14 @@
 <td></td>
 </tr>
 <tr class="supported">
+<td>jemalloc</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>jemalloc-devel</td>
+<td></td>
+</tr>
+<tr class="supported">
 <td>jflex</td>
 <td></td>
 </tr>
@@ -8884,47 +9676,11 @@
 <td></td>
 </tr>
 <tr class="supported">
-<td>kernel</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>kernel-devel</td>
+<td>keepalived</td>
 <td></td>
 </tr>
 <tr class="supported">
 <td>kernel-headers</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>kernel-libbpf</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>kernel-libbpf-devel</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>kernel-libbpf-static</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>kernel-livepatch-6.1.10-15.42</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>kernel-livepatch-6.1.12-17.42</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>kernel-livepatch-6.1.12-19.43</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>kernel-livepatch-repo-cdn</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>kernel-livepatch-repo-s3</td>
 <td></td>
 </tr>
 <tr class="supported">
@@ -10248,6 +11004,14 @@
 <td></td>
 </tr>
 <tr class="supported">
+<td>lftp</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>lftp-scripts</td>
+<td></td>
+</tr>
+<tr class="supported">
 <td>libGLEW</td>
 <td></td>
 </tr>
@@ -10477,6 +11241,14 @@
 </tr>
 <tr class="supported">
 <td>libXxf86vm-devel</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>libabigail-devel</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>libabigail-doc</td>
 <td></td>
 </tr>
 <tr class="supported">
@@ -11092,6 +11864,14 @@
 <td></td>
 </tr>
 <tr class="supported">
+<td>libecap</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>libecap-devel</td>
+<td></td>
+</tr>
+<tr class="supported">
 <td>libeconf</td>
 <td></td>
 </tr>
@@ -11336,6 +12116,14 @@
 <td></td>
 </tr>
 <tr class="supported">
+<td>libgit2</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>libgit2-devel</td>
+<td></td>
+</tr>
+<tr class="supported">
 <td>libglvnd</td>
 <td></td>
 </tr>
@@ -11545,6 +12333,18 @@
 </tr>
 <tr class="supported">
 <td>libipt-devel</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>libiscsi</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>libiscsi-devel</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>libiscsi-utils</td>
 <td></td>
 </tr>
 <tr class="supported">
@@ -11765,6 +12565,14 @@
 </tr>
 <tr class="supported">
 <td>libmpc-doc</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>libmspack</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>libmspack-devel</td>
 <td></td>
 </tr>
 <tr class="supported">
@@ -12468,6 +13276,18 @@
 <td></td>
 </tr>
 <tr class="supported">
+<td>libsigc++20</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>libsigc++20-devel</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>libsigc++20-doc</td>
+<td></td>
+</tr>
+<tr class="supported">
 <td>libsigsegv</td>
 <td></td>
 </tr>
@@ -13104,10 +13924,6 @@
 <td></td>
 </tr>
 <tr class="supported">
-<td>libwebp-java</td>
-<td></td>
-</tr>
-<tr class="supported">
 <td>libwebp-tools</td>
 <td></td>
 </tr>
@@ -13357,6 +14173,10 @@
 </tr>
 <tr class="supported">
 <td>lockdev-devel</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>lockfile-progs</td>
 <td></td>
 </tr>
 <tr class="supported">
@@ -13657,50 +14477,6 @@
 </tr>
 <tr class="supported">
 <td>mariadb-connector-c-test</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>mariadb105-backup</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>mariadb105-common</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>mariadb105-connect-engine</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>mariadb105-cracklib-password-check</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>mariadb105-devel</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>mariadb105-errmsg</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>mariadb105-gssapi-server</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>mariadb105-oqgraph-engine</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>mariadb105-pam</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>mariadb105-server-utils</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>mariadb105-sphinx-engine</td>
 <td></td>
 </tr>
 <tr class="supported">
@@ -14568,6 +15344,14 @@
 <td></td>
 </tr>
 <tr class="supported">
+<td>mtr</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>mtr-gtk</td>
+<td></td>
+</tr>
+<tr class="supported">
 <td>multilib-rpm-config</td>
 <td></td>
 </tr>
@@ -14668,6 +15452,34 @@
 <td></td>
 </tr>
 <tr class="supported">
+<td>net-snmp</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>net-snmp-agent-libs</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>net-snmp-devel</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>net-snmp-gui</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>net-snmp-libs</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>net-snmp-perl</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>net-snmp-utils</td>
+<td></td>
+</tr>
+<tr class="supported">
 <td>net-tools</td>
 <td></td>
 </tr>
@@ -14700,10 +15512,6 @@
 <td></td>
 </tr>
 <tr class="supported">
-<td>netstandard-targeting-pack-2.1</td>
-<td></td>
-</tr>
-<tr class="supported">
 <td>nettle</td>
 <td></td>
 </tr>
@@ -14728,27 +15536,15 @@
 <td></td>
 </tr>
 <tr class="supported">
+<td>nfs4-acl-tools</td>
+<td></td>
+</tr>
+<tr class="supported">
 <td>nftables</td>
 <td></td>
 </tr>
 <tr class="supported">
 <td>nftables-devel</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>nginx-all-modules</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>nginx-core</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>nginx-filesystem</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>nginx-mimetypes</td>
 <td></td>
 </tr>
 <tr class="supported">
@@ -15028,6 +15824,30 @@
 <td></td>
 </tr>
 <tr class="supported">
+<td>open-vm-tools</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>open-vm-tools-desktop</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>open-vm-tools-devel</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>open-vm-tools-salt-minion</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>open-vm-tools-sdmp</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>open-vm-tools-test</td>
+<td></td>
+</tr>
+<tr class="supported">
 <td>openblas</td>
 <td></td>
 </tr>
@@ -15145,10 +15965,6 @@
 </tr>
 <tr class="supported">
 <td>openmpi-devel</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>openmpi-java</td>
 <td></td>
 </tr>
 <tr class="supported">
@@ -16716,6 +17532,10 @@
 <td></td>
 </tr>
 <tr class="supported">
+<td>perl-HTTP-Daemon-tests</td>
+<td></td>
+</tr>
+<tr class="supported">
 <td>perl-HTTP-Date</td>
 <td></td>
 </tr>
@@ -17964,6 +18784,10 @@
 <td></td>
 </tr>
 <tr class="supported">
+<td>perl-String-CRC32</td>
+<td></td>
+</tr>
+<tr class="supported">
 <td>perl-String-Escape</td>
 <td></td>
 </tr>
@@ -18549,6 +19373,14 @@
 </tr>
 <tr class="supported">
 <td>perl-Text-Soundex</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>perl-Text-Tabs+Wrap</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>perl-Text-Tabs+Wrap-tests</td>
 <td></td>
 </tr>
 <tr class="supported">
@@ -19176,102 +20008,6 @@
 <td></td>
 </tr>
 <tr class="supported">
-<td>php8.1-bcmath</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>php8.1-cli</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>php8.1-common</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>php8.1-dba</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>php8.1-dbg</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>php8.1-devel</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>php8.1-embedded</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>php8.1-enchant</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>php8.1-ffi</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>php8.1-fpm</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>php8.1-gd</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>php8.1-gmp</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>php8.1-intl</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>php8.1-ldap</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>php8.1-mbstring</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>php8.1-mysqlnd</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>php8.1-odbc</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>php8.1-opcache</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>php8.1-pdo</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>php8.1-pgsql</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>php8.1-process</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>php8.1-soap</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>php8.1-tidy</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>php8.1-xml</td>
-<td></td>
-</tr>
-<tr class="supported">
 <td>pigz</td>
 <td></td>
 </tr>
@@ -19625,54 +20361,6 @@
 </tr>
 <tr class="supported">
 <td>postfix-sqlite</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>postgresql15-llvmjit</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>postgresql15-plperl</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>postgresql15-plpython3</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>postgresql15-pltcl</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>postgresql15-private-devel</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>postgresql15-private-libs</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>postgresql15-server-devel</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>postgresql15-static</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>postgresql15-test</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>postgresql15-test-rpm-macros</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>postgresql15-upgrade</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>postgresql15-upgrade-devel</td>
 <td></td>
 </tr>
 <tr class="supported">
@@ -20124,6 +20812,10 @@
 <td></td>
 </tr>
 <tr class="supported">
+<td>python3-configshell</td>
+<td></td>
+</tr>
+<tr class="supported">
 <td>python3-constantly</td>
 <td></td>
 </tr>
@@ -20464,6 +21156,10 @@
 <td></td>
 </tr>
 <tr class="supported">
+<td>python3-linux-procfs</td>
+<td></td>
+</tr>
+<tr class="supported">
 <td>python3-lit</td>
 <td></td>
 </tr>
@@ -20565,6 +21261,10 @@
 </tr>
 <tr class="supported">
 <td>python3-pbr</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>python3-pefile</td>
 <td></td>
 </tr>
 <tr class="supported">
@@ -21020,6 +21720,10 @@
 <td></td>
 </tr>
 <tr class="supported">
+<td>python3-uefivars</td>
+<td></td>
+</tr>
+<tr class="supported">
 <td>python3-urlgrabber</td>
 <td></td>
 </tr>
@@ -21217,14 +21921,6 @@
 </tr>
 <tr class="supported">
 <td>recode-devel</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>redis6-devel</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>redis6-doc</td>
 <td></td>
 </tr>
 <tr class="supported">
@@ -21477,82 +22173,6 @@
 </tr>
 <tr class="supported">
 <td>ruby-solv</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>ruby3.2-default-gems</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>ruby3.2-doc</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>ruby3.2-libs</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>ruby3.2-rubygem-bigdecimal</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>ruby3.2-rubygem-bundler</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>ruby3.2-rubygem-io-console</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>ruby3.2-rubygem-irb</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>ruby3.2-rubygem-json</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>ruby3.2-rubygem-minitest</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>ruby3.2-rubygem-power_assert</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>ruby3.2-rubygem-psych</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>ruby3.2-rubygem-rake</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>ruby3.2-rubygem-rdoc</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>ruby3.2-rubygem-rexml</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>ruby3.2-rubygem-rss</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>ruby3.2-rubygem-test-unit</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>ruby3.2-rubygem-typeprof</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>ruby3.2-rubygems</td>
-<td></td>
-</tr>
-<tr class="supported">
-<td>ruby3.2-rubygems-devel</td>
 <td></td>
 </tr>
 <tr class="supported">
@@ -21948,6 +22568,14 @@
 <td></td>
 </tr>
 <tr class="supported">
+<td>smartmontools</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>smartmontools-selinux</td>
+<td></td>
+</tr>
+<tr class="supported">
 <td>snakeyaml</td>
 <td></td>
 </tr>
@@ -22044,10 +22672,6 @@
 <td></td>
 </tr>
 <tr class="supported">
-<td>sphinx-java</td>
-<td></td>
-</tr>
-<tr class="supported">
 <td>sphinx-php</td>
 <td></td>
 </tr>
@@ -22109,6 +22733,10 @@
 </tr>
 <tr class="supported">
 <td>squashfs-tools</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>squid</td>
 <td></td>
 </tr>
 <tr class="supported">
@@ -22197,6 +22825,10 @@
 </tr>
 <tr class="supported">
 <td>stress</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>stress-ng</td>
 <td></td>
 </tr>
 <tr class="supported">
@@ -22464,10 +23096,6 @@
 <td></td>
 </tr>
 <tr class="supported">
-<td>systemtap-runtime-java</td>
-<td></td>
-</tr>
-<tr class="supported">
 <td>systemtap-runtime-virtguest</td>
 <td></td>
 </tr>
@@ -22513,6 +23141,10 @@
 </tr>
 <tr class="supported">
 <td>target-restore</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>targetcli</td>
 <td></td>
 </tr>
 <tr class="supported">
@@ -48528,6 +49160,10 @@
 <td></td>
 </tr>
 <tr class="supported">
+<td>trace-cmd</td>
+<td></td>
+</tr>
+<tr class="supported">
 <td>traceroute</td>
 <td></td>
 </tr>
@@ -48924,6 +49560,10 @@
 <td></td>
 </tr>
 <tr class="supported">
+<td>virt-what</td>
+<td></td>
+</tr>
+<tr class="supported">
 <td>voikko-fi</td>
 <td></td>
 </tr>
@@ -49005,6 +49645,10 @@
 </tr>
 <tr class="supported">
 <td>whois-nls</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>wireguard-tools</td>
 <td></td>
 </tr>
 <tr class="supported">
@@ -49457,6 +50101,10 @@
 </tr>
 <tr class="supported">
 <td>xorg-x11-xtrans-devel</td>
+<td></td>
+</tr>
+<tr class="supported">
+<td>xxd</td>
 <td></td>
 </tr>
 <tr class="supported">
