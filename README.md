@@ -40,18 +40,15 @@ Amazon Linux 2023 is optimized for Amazon EC2, comes well integrated with latest
 **Flexible and consistent update experience:**
 Based on Fedora, AL2023 provides frequent and flexible quarterly updates. AL2023 also locks to a specific version of the Amazon Linux package repository, giving you control over how and when you absorb updates.
 
-**Easy to plan and manage operating system lifecycle:**
-New Amazon Linux major versions will be available every two years and each major version, including AL2023, will come with five years of long term support. 
-
 **High security standard:**
 Major applications within AL2023 come with pre-configured SELinux policies to help you meet your compliance needs. AL2023 also allows you to set security policies at boot time.
 
 ## Notable features of Amazon Linux 2023
-**Predictable two-year major release cycle and long-term support:**
-Starting with AL2023, a new major version of Amazon Linux releases every two years and comes with five years of long-term support, with each release consisting of standard support (2 years), and maintenance (3 years). This support commitment gives customers the stability they need to manage long project lifecycles.
+**Long-term support:**
+AL2023 will receive standard and maintenance support as defined in the AL2023 FAQs and [AL release cadence](https://docs.aws.amazon.com/linux/al2023/ug/release-cadence.html). This support commitment gives customers the stability they need to manage long project lifecycles.
 
 **Frequent and flexible updates:**
-During the standard support phase (2 years), the release receives quarterly minor version updates to provide customers with security updates, bug fixes, and new features. Based on Fedora, this also gives customers access to a wide variety of modern software packages.
+During the standard support phase, the release receives quarterly minor version updates to provide customers with security updates, bug fixes, and new features. Based on Fedora, this also gives customers access to a wide variety of modern software packages.
 
 **Improved security posture:**
 AL2023 includes pre-configured security policies that make it easy for customers to implement common industry guidelines. These policies can be configured at launch time or run time, including setting the system crypto policy to FUTURE or LEGACY, locking down SELinux, and setting SELinux to enforcing or permissive mode.
